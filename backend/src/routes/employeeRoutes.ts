@@ -43,11 +43,11 @@ router.post('/hire', requireAuth, async (req: Request, res: Response) => {
     }
 
     const normalizedEmail = String(email).trim().toLowerCase();
-    const existingUser = await User.findOne({ email: normalizedEmail });
+    const existingUser = await User.findOne({ email: normalizedEmail }).setOptions({ bypassTenancy: true });
     if (existingUser) {
       return res.status(409).json({ error: 'An account already exists for this email' });
     }
-    const existingEmp = await Employee.findOne({ email: normalizedEmail });
+    const existingEmp = await Employee.findOne({ email: normalizedEmail }).setOptions({ bypassTenancy: true });
     if (existingEmp) {
       return res.status(409).json({ error: 'An account already exists for this email' });
     }
@@ -118,8 +118,8 @@ router.patch('/:id', requireAuth, async (req: Request, res: Response) => {
     const oldPhone = emp.phone;
     const newEmail = email ? String(email).trim().toLowerCase() : oldEmail;
     if (newEmail !== oldEmail) {
-      const clash = await User.findOne({ email: newEmail });
-      if (clash || (await Employee.findOne({ email: newEmail, _id: { $ne: emp._id } }))) {
+      const clash = await User.findOne({ email: newEmail }).setOptions({ bypassTenancy: true });
+      if (clash || (await Employee.findOne({ email: newEmail, _id: { $ne: emp._id } }).setOptions({ bypassTenancy: true }))) {
         return res.status(409).json({ error: 'An account already exists for this email' });
       }
     }
@@ -131,7 +131,7 @@ router.patch('/:id', requireAuth, async (req: Request, res: Response) => {
     emp.department = department || emp.department;
     await emp.save();
 
-    const linked = await User.findOne({ email: oldEmail });
+    const linked = await User.findOne({ email: oldEmail }).setOptions({ bypassTenancy: true });
     if (linked) {
       const passwordChanged = normalizePhone(oldPhone) !== normalizePhone(emp.phone);
       linked.name = emp.name;

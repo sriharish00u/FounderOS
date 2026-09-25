@@ -28,7 +28,7 @@ const upsertBy = async (model: mongoose.Model<any>, key: string, docs: any[]): P
 const backfillCompanyCode = async (code: string): Promise<void> => {
   const tenantModels = [Employee, AIEmployee, Task, Goal, Department, Role, Activity, Notification];
   for (const model of tenantModels) {
-    const res = await (model as any).updateMany({ companyCode: { $exists: false } }, { $set: { companyCode: code } });
+    const res = await (model as any).updateMany({ companyCode: { $exists: false } }, { $set: { companyCode: code } }).setOptions({ bypassTenancy: true });
     if (res.modifiedCount > 0) {
       console.log(`  Backfilled companyCode on ${model.modelName}: ${res.modifiedCount} docs`);
     }
@@ -37,7 +37,7 @@ const backfillCompanyCode = async (code: string): Promise<void> => {
 
 const insertIfEmpty = async (model: mongoose.Model<any>, docs: any[]): Promise<void> => {
   if (!docs.length) return;
-  const count = await model.countDocuments();
+  const count = await model.countDocuments().setOptions({ bypassTenancy: true });
   if (count > 0) return;
   await model.insertMany(docs);
 };

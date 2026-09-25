@@ -1,0 +1,23 @@
+- generic [ref=f9e838]:
+  - banner [ref=f9e839]:
+    - generic [ref=f9e840]:
+      - generic [ref=f9e841]: ◆
+      - text: Founder Os
+    - button "← Back To Home" [ref=f9e842]
+  - main [ref=f9e843]:
+    - generic [ref=f9e844]:
+      - heading "Welcome Back" [level=1] [ref=f9e845]
+      - paragraph [ref=f9e846]: Sign in to your company operating system
+      - generic [ref=f9e847]:
+        - generic [ref=f9e848]:
+          - button "Sign In" [ref=f9e849]
+          - button "Register" [ref=f9e850]
+        - paragraph [ref=f9e859]: Invalid email or password
+        - generic [ref=f9e851]:
+          - generic [ref=f9e852]:
+            - generic [ref=f9e853]: Email
+            - textbox "founder@company.com" [ref=f9e854]: onboardtest@browsertest.io
+          - generic [ref=f9e855]:
+            - generic [ref=f9e856]: Password
+            - textbox "••••••••" [ref=f9e857]: onboardpass123
+          - button "Sign In" [ref=f9e858]

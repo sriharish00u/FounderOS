@@ -1,0 +1,164 @@
+- generic [ref=f9e352]:
+  - banner [ref=f9e353]:
+    - generic [ref=f9e354]:
+      - generic [ref=f9e355]:
+        - generic [ref=f9e356]: Founder Os
+        - generic [ref=f9e357]: ·
+        - generic [ref=f9e358]: Browser Test Co
+      - generic [ref=f9e359]: FO-2026-A2DF
+    - generic [ref=f9e360]:
+      - generic [ref=f9e362]:
+        - generic [ref=f9e363]:
+          - generic [ref=f9e364]: "[08:25 PM]"
+          - generic [ref=f9e365]: 👑 Onboard Test Emp
+          - generic [ref=f9e366]: completed onboarding
+          - generic [ref=f9e367]: "\"Onboard Test Emp (employee)\""
+          - generic [ref=f9e368]: ·
+        - generic [ref=f9e369]:
+          - generic [ref=f9e370]: "[08:20 PM]"
+          - generic [ref=f9e371]: 👑 Onboard Test Emp
+          - generic [ref=f9e372]: completed onboarding
+          - generic [ref=f9e373]: "\"Onboard Test Emp (employee)\""
+          - generic [ref=f9e374]: ·
+        - generic [ref=f9e375]:
+          - generic [ref=f9e376]: "[08:17 PM]"
+          - generic [ref=f9e377]: 👑 B Test Founder
+          - generic [ref=f9e378]: hired employee
+          - generic [ref=f9e379]: "\"Onboard Test Emp (Frontend Developer)\""
+          - generic [ref=f9e380]: ·
+        - generic [ref=f9e381]:
+          - generic [ref=f9e382]: "[08:06 PM]"
+          - generic [ref=f9e383]: 👑 Onboard Check
+          - generic [ref=f9e384]: completed onboarding
+          - generic [ref=f9e385]: "\"Onboard Check (employee)\""
+          - generic [ref=f9e386]: ·
+        - generic [ref=f9e387]:
+          - generic [ref=f9e388]: "[08:05 PM]"
+          - generic [ref=f9e389]: 👑 B Test Founder
+          - generic [ref=f9e390]: hired employee
+          - generic [ref=f9e391]: "\"Onboard Check (Designer)\""
+          - generic [ref=f9e392]: ·
+        - generic [ref=f9e393]:
+          - generic [ref=f9e394]: "[07:38 PM]"
+          - generic [ref=f9e395]: 👑 B Test Founder
+          - generic [ref=f9e396]: updated employee profile
+          - generic [ref=f9e397]: "\"Ravi Hiretest II (QA Engineer)\""
+          - generic [ref=f9e398]: ·
+        - generic [ref=f9e399]:
+          - generic [ref=f9e400]: "[07:34 PM]"
+          - generic [ref=f9e401]: 👑 B Test Founder
+          - generic [ref=f9e402]: updated employee profile
+          - generic [ref=f9e403]: "\"Ravi Hiretest II (QA Engineer)\""
+          - generic [ref=f9e404]: ·
+        - generic [ref=f9e405]:
+          - generic [ref=f9e406]: "[07:34 PM]"
+          - generic [ref=f9e407]: 👑 B Test Founder
+          - generic [ref=f9e408]: hired employee
+          - generic [ref=f9e409]: "\"Ravi Hiretest (QA Engineer)\""
+          - generic [ref=f9e410]: ·
+        - generic [ref=f9e411]:
+          - generic [ref=f9e412]: "[07:33 PM]"
+          - generic [ref=f9e413]: 👑 B Test Founder
+          - generic [ref=f9e414]: hired employee
+          - generic [ref=f9e415]: "\"Priya Hiretest (Product Designer)\""
+          - generic [ref=f9e416]: ·
+        - generic [ref=f9e417]:
+          - generic [ref=f9e418]: "[07:08 PM]"
+          - generic [ref=f9e419]: 👑 B Test Founder
+          - generic [ref=f9e420]: provisioned and deployed AI employee
+          - generic [ref=f9e421]: "\"AI · You run our multi-fallback (gpt-4o)\""
+          - generic [ref=f9e422]: ·
+        - generic [ref=f9e423]:
+          - generic [ref=f9e424]: "[07:00 PM]"
+          - generic [ref=f9e425]: 👑 B Test Founder
+          - generic [ref=f9e426]: provisioned and deployed AI employee
+          - generic [ref=f9e427]: "\"AI · You run our quality (gpt-4o)\""
+          - generic [ref=f9e428]: ·
+        - generic [ref=f9e429]:
+          - generic [ref=f9e430]: "[06:59 PM]"
+          - generic [ref=f9e431]: 👑 B Test Founder
+          - generic [ref=f9e432]: created role
+          - generic [ref=f9e433]: "\"QA Lead\""
+          - generic [ref=f9e434]: ·
+        - generic [ref=f9e435]:
+          - generic [ref=f9e436]: "[06:57 PM]"
+          - generic [ref=f9e437]: 👑 B Test Founder
+          - generic [ref=f9e438]: created department
+          - generic [ref=f9e439]: "\"QA Assurance\""
+          - generic [ref=f9e440]: ·
+      - button "Dispatch (0)" [ref=f9e443]
+  - generic [ref=f9e444]:
+    - complementary [ref=f9e445]:
+      - generic [ref=f9e446]:
+        - generic [ref=f9e447]:
+          - generic [ref=f9e448]: Founder Os.
+          - generic [ref=f9e449]: Browser Test Co
+        - generic [ref=f9e450]:
+          - generic [ref=f9e451]: FO
+          - generic [ref=f9e452]:
+            - generic [ref=f9e453]: "@onboard"
+            - generic [ref=f9e454]: TIER III · FO-2026-A2DF
+        - generic [ref=f9e455]:
+          - heading "Today" [level=4] [ref=f9e456]
+          - list [ref=f9e457]:
+            - listitem [ref=f9e458] [cursor=pointer]:
+              - generic [ref=f9e459]: Command Center
+              - generic [ref=f9e460]: "0"
+            - listitem [ref=f9e461] [cursor=pointer]:
+              - generic [ref=f9e462]: Tasks & Pipeline
+              - generic [ref=f9e463]: "0"
+            - listitem [ref=f9e464] [cursor=pointer]:
+              - generic [ref=f9e465]: My Todos
+              - generic [ref=f9e466]: "0"
+        - generic [ref=f9e467]:
+          - heading "Organization" [level=4] [ref=f9e468]
+          - list [ref=f9e469]:
+            - listitem [ref=f9e470] [cursor=pointer]:
+              - generic [ref=f9e471]: People & Roles
+              - generic [ref=f9e472]: 1 teammate
+            - listitem [ref=f9e473] [cursor=pointer]:
+              - generic [ref=f9e474]: Strategic OKRs
+              - generic [ref=f9e475]: 0%
+        - generic [ref=f9e476]:
+          - heading "Archive & Audit" [level=4] [ref=f9e477]
+          - list [ref=f9e478]:
+            - listitem [ref=f9e479] [cursor=pointer]:
+              - generic [ref=f9e480]:
+                - generic [ref=f9e481]: ●
+                - text: Velocity Reports
+            - listitem [ref=f9e482] [cursor=pointer]:
+              - generic [ref=f9e483]: Settings & Audit
+      - button "● Sign Out" [ref=f9e485]:
+        - generic [ref=f9e486]: ●
+        - text: Sign Out
+    - main [ref=f9e487]:
+      - generic [ref=f9e488]:
+        - generic [ref=f9e489]:
+          - generic [ref=f9e490]:
+            - heading "Velocity & Retrospective Reports" [level=2] [ref=f9e491]
+            - paragraph [ref=f9e492]: Execution snapshot for Engineering — human vs AI throughput inside your department.
+          - generic [ref=f9e493]:
+            - button "Monthly" [ref=f9e494]
+            - button "Yearly 2026" [ref=f9e495]
+        - generic [ref=f9e496]:
+          - generic [ref=f9e497]:
+            - generic [ref=f9e498]: Total Completed
+            - generic [ref=f9e499]: "0"
+            - generic [ref=f9e500]: Live from task board
+          - generic [ref=f9e501]:
+            - generic [ref=f9e502]: Active Workforce
+            - generic [ref=f9e503]: 1 + 0
+            - generic [ref=f9e504]: Humans & AI in tandem
+          - generic [ref=f9e505]:
+            - generic [ref=f9e506]: Goals Completed
+            - generic [ref=f9e507]: 0 / 0
+            - generic [ref=f9e508]: OKR milestones closed
+          - generic [ref=f9e509]:
+            - generic [ref=f9e510]: AI Deliverables
+            - generic [ref=f9e511]: "0"
+            - generic [ref=f9e512]: Tasks completed by AI agents
+        - generic [ref=f9e513]:
+          - generic [ref=f9e514]:
+            - heading "Output by Month" [level=3] [ref=f9e515]
+            - paragraph [ref=f9e516]: No tasks logged yet this period.
+          - heading "Departmental Velocity" [level=3] [ref=f9e518]

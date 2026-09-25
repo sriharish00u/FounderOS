@@ -1,0 +1,181 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Founder Os
+        - generic [ref=e9]: ·
+        - generic [ref=e10]: Founder OS Tech Labs
+      - generic [ref=e11]: FO-2026-7X4K
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "[10:32 AM]"
+          - generic [ref=e17]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=e18]: submitted deliverable for
+          - generic [ref=e19]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=e20]: ·
+        - generic [ref=e21]:
+          - generic [ref=e22]: "[10:15 AM]"
+          - generic [ref=e23]: 👤 Vikram Mehta
+          - generic [ref=e24]: completed task
+          - generic [ref=e25]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=e26]: ·
+        - generic [ref=e27]:
+          - generic [ref=e28]: "[09:40 AM]"
+          - generic [ref=e29]: 🤖 Sentinel - Code Review AI
+          - generic [ref=e30]: generated 42 unit test suites for
+          - generic [ref=e31]: "\"AI Model Provider Gateway\""
+          - generic [ref=e32]: ·
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Mode:"
+          - button "Founder" [ref=e36]
+          - button "Manager" [ref=e37]
+          - button "Employee" [ref=e38]
+        - button "Dispatch (2)" [ref=e40]
+        - button "+ Hire" [ref=e42]
+        - button "+ Task" [ref=e43]
+  - generic [ref=e44]:
+    - complementary [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Founder Os.
+          - generic [ref=e49]: Founder OS Tech Labs
+        - generic [ref=e50]:
+          - generic [ref=e51]: FO
+          - generic [ref=e52]:
+            - generic [ref=e53]: "@anita"
+            - generic [ref=e54]: TIER III · FO-2026-7X4K
+        - generic [ref=e55]:
+          - heading "Today" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Command Center
+              - generic [ref=e61]: "3"
+            - listitem [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: Tasks & Pipeline
+              - generic [ref=e64]: 1 rev
+            - listitem [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: My Todos
+              - generic [ref=e67]: "1"
+        - generic [ref=e68]:
+          - heading "Organization" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: AI Workforce
+              - generic [ref=e73]: ● 2 live
+            - listitem [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]:
+                - generic [ref=e173]: ●
+                - text: People & Roles
+              - generic [ref=e76]: 5 staff
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Strategic OKRs
+              - generic [ref=e79]: 78%
+        - generic [ref=e80]:
+          - heading "Archive & Audit" [level=4] [ref=e81]
+          - list [ref=e82]:
+            - listitem [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: Velocity Reports
+            - listitem [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Settings & Audit
+      - button "● Sign Out" [ref=e88]:
+        - generic [ref=e89]: ●
+        - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - heading "People, Roles & Organizational Chart" [level=2] [ref=e177]
+            - paragraph [ref=e178]: Human talent roster, custom role permissions, and departmental leads.
+          - button "+ Invite Employee" [ref=e179]
+        - generic [ref=e180]:
+          - button "Employees (5)" [ref=e181]
+          - button "Roles (5)" [ref=e182]
+          - button "Departments (4)" [ref=e183]
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e187]:
+                - generic [ref=e188]: Founder & Owner
+                - heading "Sri Harish" [level=3] [ref=e189]
+                - generic [ref=e190]: FO-2026-7X4K-Owner
+              - generic [ref=e191]: SH
+            - generic [ref=e192]:
+              - generic [ref=e193]: "Email: founder@founderos.io"
+              - generic [ref=e194]: "Phone: +91 98765 43210"
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: Engineering
+                - heading "Vikram Mehta" [level=3] [ref=e199]
+                - generic [ref=e200]: Lead Fullstack Architect
+                - text: FO-2026-7X4K-DEV001
+              - generic [ref=e201]: active
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - generic [ref=e204]: "Joined:"
+                - generic [ref=e205]: 2026-01-15
+              - generic [ref=e206]:
+                - generic [ref=e207]: "Tasks Completed:"
+                - generic [ref=e208]: "48"
+          - generic [ref=e209]:
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - generic [ref=e212]: Growth & Marketing
+                - heading "Priya Sharma" [level=3] [ref=e213]
+                - generic [ref=e214]: Growth Marketing Manager
+                - text: FO-2026-7X4K-MGR001
+              - generic [ref=e215]: active
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - generic [ref=e218]: "Joined:"
+                - generic [ref=e219]: 2026-02-01
+              - generic [ref=e220]:
+                - generic [ref=e221]: "Tasks Completed:"
+                - generic [ref=e222]: "39"
+          - generic [ref=e223]:
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: Engineering
+                - heading "Arun Sundaram" [level=3] [ref=e227]
+                - generic [ref=e228]: Frontend UI/UX Engineer
+                - text: FO-2026-7X4K-EMP003
+              - generic [ref=e229]: active
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e232]: "Joined:"
+                - generic [ref=e233]: 2026-03-10
+              - generic [ref=e234]:
+                - generic [ref=e235]: "Tasks Completed:"
+                - generic [ref=e236]: "24"
+          - generic [ref=e237]:
+            - generic [ref=e238]:
+              - generic [ref=e239]:
+                - generic [ref=e240]: Sales & Revenue
+                - heading "Ananya Roy" [level=3] [ref=e241]
+                - generic [ref=e242]: Sales Lead
+                - text: FO-2026-7X4K-EMP004
+              - generic [ref=e243]: active
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - generic [ref=e246]: "Joined:"
+                - generic [ref=e247]: 2026-04-01
+              - generic [ref=e248]:
+                - generic [ref=e249]: "Tasks Completed:"
+                - generic [ref=e250]: "31"
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - generic [ref=e254]: Engineering
+                - heading "Siddharth Rao" [level=3] [ref=e255]
+                - generic [ref=e256]: DevOps & Cloud Engineer
+                - text: FO-2026-7X4K-EMP005
+              - generic [ref=e257]: onboarding
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e260]: "Joined:"
+                - generic [ref=e261]: 2026-09-18
+              - generic [ref=e262]:
+                - generic [ref=e263]: "Tasks Completed:"
+                - generic [ref=e264]: "5"

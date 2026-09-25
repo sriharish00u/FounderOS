@@ -1,0 +1,173 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Founder Os
+        - generic [ref=e9]: ·
+        - generic [ref=e10]: Founder OS Tech Labs
+      - generic [ref=e11]: FO-2026-7X4K
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "[10:32 AM]"
+          - generic [ref=e17]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=e18]: submitted deliverable for
+          - generic [ref=e19]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=e20]: ·
+        - generic [ref=e21]:
+          - generic [ref=e22]: "[10:15 AM]"
+          - generic [ref=e23]: 👤 Vikram Mehta
+          - generic [ref=e24]: completed task
+          - generic [ref=e25]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=e26]: ·
+        - generic [ref=e27]:
+          - generic [ref=e28]: "[09:40 AM]"
+          - generic [ref=e29]: 🤖 Sentinel - Code Review AI
+          - generic [ref=e30]: generated 42 unit test suites for
+          - generic [ref=e31]: "\"AI Model Provider Gateway\""
+          - generic [ref=e32]: ·
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Mode:"
+          - button "Founder" [ref=e36]
+          - button "Manager" [ref=e37]
+          - button "Employee" [ref=e38]
+        - button "Dispatch (2)" [ref=e40]
+        - button "+ Hire" [ref=e42]
+        - button "+ Task" [ref=e43]
+  - generic [ref=e44]:
+    - complementary [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Founder Os.
+          - generic [ref=e49]: Founder OS Tech Labs
+        - generic [ref=e50]:
+          - generic [ref=e51]: FO
+          - generic [ref=e52]:
+            - generic [ref=e53]: "@anita"
+            - generic [ref=e54]: TIER III · FO-2026-7X4K
+        - generic [ref=e55]:
+          - heading "Today" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Command Center
+              - generic [ref=e61]: "3"
+            - listitem [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: Tasks & Pipeline
+              - generic [ref=e64]: 1 rev
+            - listitem [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: My Todos
+              - generic [ref=e67]: "1"
+        - generic [ref=e68]:
+          - heading "Organization" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: AI Workforce
+              - generic [ref=e73]: ● 2 live
+            - listitem [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: People & Roles
+              - generic [ref=e76]: 5 staff
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Strategic OKRs
+              - generic [ref=e79]: 78%
+        - generic [ref=e80]:
+          - heading "Archive & Audit" [level=4] [ref=e81]
+          - list [ref=e82]:
+            - listitem [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]:
+                - generic [ref=e265]: ●
+                - text: Velocity Reports
+            - listitem [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Settings & Audit
+      - button "● Sign Out" [ref=e88]:
+        - generic [ref=e89]: ●
+        - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e266]:
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - heading "Velocity & Retrospective Reports" [level=2] [ref=e269]
+            - paragraph [ref=e270]: Historical company execution, departmental milestones, and Human vs AI throughput.
+          - generic [ref=e271]:
+            - button "Monthly" [ref=e272]
+            - button "Yearly 2026" [ref=e273]
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - generic [ref=e276]: Total Completed
+            - generic [ref=e277]: "487"
+            - generic [ref=e278]: 92.4% on-time completion
+          - generic [ref=e279]:
+            - generic [ref=e280]: Active Workforce
+            - generic [ref=e281]: 5 + 3
+            - generic [ref=e282]: Humans & AI in tandem
+          - generic [ref=e283]:
+            - generic [ref=e284]: Sprint Goals
+            - generic [ref=e285]: 8 / 11
+            - generic [ref=e286]: +23% vs last month
+          - generic [ref=e287]:
+            - generic [ref=e288]: AI Accuracy
+            - generic [ref=e289]: 98.4%
+            - generic [ref=e290]: First-pass manager pass
+        - generic [ref=e291]:
+          - generic [ref=e292]:
+            - heading "Monthly Output (Jan – Sep 2026)" [level=3] [ref=e293]
+            - generic [ref=e294]:
+              - generic [ref=e295]:
+                - generic [ref=e296]:
+                  - generic [ref=e297]: Sep 2026
+                  - generic [ref=e298]: 486 tasks
+                - generic [ref=e302]:
+                  - generic [ref=e303]: "Human: 174"
+                  - generic [ref=e304]: "AI Workforce: 312"
+              - generic [ref=e305]:
+                - generic [ref=e306]:
+                  - generic [ref=e307]: Aug 2026
+                  - generic [ref=e308]: 395 tasks
+                - generic [ref=e312]:
+                  - generic [ref=e313]: "Human: 155"
+                  - generic [ref=e314]: "AI Workforce: 240"
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - generic [ref=e317]: Jul 2026
+                  - generic [ref=e318]: 320 tasks
+                - generic [ref=e322]:
+                  - generic [ref=e323]: "Human: 140"
+                  - generic [ref=e324]: "AI Workforce: 180"
+              - generic [ref=e325]:
+                - generic [ref=e326]:
+                  - generic [ref=e327]: Jun 2026
+                  - generic [ref=e328]: 260 tasks
+                - generic [ref=e332]:
+                  - generic [ref=e333]: "Human: 130"
+                  - generic [ref=e334]: "AI Workforce: 130"
+          - generic [ref=e335]:
+            - heading "Departmental Velocity" [level=3] [ref=e336]
+            - generic [ref=e337]:
+              - generic [ref=e338]:
+                - generic [ref=e339]:
+                  - generic [ref=e340]: Engineering
+                  - generic [ref=e341]: "Lead: Vikram Mehta"
+                - generic [ref=e342]:
+                  - generic [ref=e343]: 78% OKR
+                  - generic [ref=e344]: 8 Staff + 3 AI
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - generic [ref=e347]: Growth & Marketing
+                  - generic [ref=e348]: "Lead: Priya Sharma"
+                - generic [ref=e349]:
+                  - generic [ref=e350]: 84% OKR
+                  - generic [ref=e351]: 5 Staff + 2 AI
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - generic [ref=e354]: Sales & Revenue
+                  - generic [ref=e355]: "Lead: Ananya Roy"
+                - generic [ref=e356]:
+                  - generic [ref=e357]: 71% OKR
+                  - generic [ref=e358]: 4 Staff + 2 AI
+              - generic [ref=e359]:
+                - generic [ref=e360]:
+                  - generic [ref=e361]: Operations & HR
+                  - generic [ref=e362]: "Lead: Kavita Nair"
+                - generic [ref=e363]:
+                  - generic [ref=e364]: 92% OKR
+                  - generic [ref=e365]: 3 Staff + 1 AI

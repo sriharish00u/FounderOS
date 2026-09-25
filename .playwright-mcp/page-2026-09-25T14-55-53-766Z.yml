@@ -1,0 +1,45 @@
+- generic [ref=f9e285]:
+  - banner [ref=f9e286]:
+    - generic [ref=f9e287]:
+      - generic [ref=f9e288]: ◆
+      - text: Founder Os
+    - generic [ref=f9e289]:
+      - generic [ref=f9e290]: One company · One code · One ledger
+      - button "Sign In →" [ref=f9e291]
+  - main [ref=f9e292]:
+    - generic [ref=f9e293]:
+      - paragraph [ref=f9e294]: The Operating System For Your Company
+      - heading "Founder OS" [level=1] [ref=f9e295]
+      - paragraph [ref=f9e296]: "Build your company with people and AI employees working from a single shared operating rhythm: hire them, brief them, and watch the work land."
+      - generic [ref=f9e297]:
+        - button "Register Your Company" [ref=f9e298]
+        - button "Sign In" [ref=f9e299]
+      - paragraph [ref=f9e300]: Setup takes under two minutes
+    - generic [ref=f9e302]:
+      - article [ref=f9e303]:
+        - paragraph [ref=f9e304]: "01"
+        - heading "Human Hiring" [level=2] [ref=f9e305]
+        - paragraph [ref=f9e306]: Hire people instantly — each employee signs in with email and their phone as password — under one company code.
+      - article [ref=f9e307]:
+        - paragraph [ref=f9e308]: "02"
+        - heading "Ai Workforce" [level=2] [ref=f9e309]
+        - paragraph [ref=f9e310]: Hire specialized AI employees that carry their own briefs and handoffs.
+      - article [ref=f9e311]:
+        - paragraph [ref=f9e312]: "03"
+        - heading "Operating Rhythm" [level=2] [ref=f9e313]
+        - paragraph [ref=f9e314]: Tasks, goals, and reports stay in one ledger your whole company reads.
+    - generic [ref=f9e316]:
+      - heading "How It Works" [level=2] [ref=f9e317]
+      - generic [ref=f9e318]:
+        - generic [ref=f9e319]:
+          - generic [ref=f9e320]: "1"
+          - paragraph [ref=f9e321]: Register your company
+        - generic [ref=f9e322]:
+          - generic [ref=f9e323]: "2"
+          - paragraph [ref=f9e324]: Hire people and deploy AI members
+        - generic [ref=f9e325]:
+          - generic [ref=f9e326]: "3"
+          - paragraph [ref=f9e327]: Run the operating system daily
+  - contentinfo [ref=f9e328]:
+    - generic [ref=f9e329]: Founder OS
+    - button "Enter The Os →" [ref=f9e330]

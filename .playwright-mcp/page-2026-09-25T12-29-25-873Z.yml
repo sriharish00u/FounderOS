@@ -1,0 +1,77 @@
+- generic [ref=f3e189]:
+  - banner [ref=f3e190]:
+    - generic [ref=f3e191]:
+      - generic [ref=f3e192]:
+        - generic [ref=f3e193]: Founder Os
+        - generic [ref=f3e194]: ·
+        - generic [ref=f3e195]: Browser Test Co
+      - generic [ref=f3e196]: FO-2026-A2DF
+    - generic [ref=f3e224]:
+      - button "Dispatch (0)" [ref=f3e298]
+      - button "+ Hire" [ref=f3e228]
+      - button "+ Task" [ref=f3e229]
+  - generic [ref=f3e230]:
+    - complementary [ref=f3e231]:
+      - generic [ref=f3e232]:
+        - generic [ref=f3e233]:
+          - generic [ref=f3e234]: Founder Os.
+          - generic [ref=f3e235]: Browser Test Co
+        - generic [ref=f3e236]:
+          - generic [ref=f3e237]: FO
+          - generic [ref=f3e238]:
+            - generic [ref=f3e239]: "@b"
+            - generic [ref=f3e240]: TIER III · FO-2026-A2DF
+        - generic [ref=f3e241]:
+          - heading "Today" [level=4] [ref=f3e242]
+          - list [ref=f3e243]:
+            - listitem [ref=f3e244] [cursor=pointer]:
+              - generic [ref=f3e245]:
+                - generic [ref=f3e246]: ●
+                - text: Command Center
+              - generic [ref=f3e247]: "0"
+            - listitem [ref=f3e248] [cursor=pointer]:
+              - generic [ref=f3e249]: Tasks & Pipeline
+              - generic [ref=f3e250]: "0"
+            - listitem [ref=f3e251] [cursor=pointer]:
+              - generic [ref=f3e252]: My Todos
+              - generic [ref=f3e253]: "0"
+        - generic [ref=f3e254]:
+          - heading "Organization" [level=4] [ref=f3e255]
+          - list [ref=f3e256]:
+            - listitem [ref=f3e257] [cursor=pointer]:
+              - generic [ref=f3e258]: People & Roles
+              - generic [ref=f3e259]: 0 staff
+            - listitem [ref=f3e260] [cursor=pointer]:
+              - generic [ref=f3e261]: Strategic OKRs
+              - generic [ref=f3e262]: 0%
+        - generic [ref=f3e263]:
+          - heading "Archive & Audit" [level=4] [ref=f3e264]
+          - list [ref=f3e265]:
+            - listitem [ref=f3e266] [cursor=pointer]:
+              - generic [ref=f3e267]: Velocity Reports
+            - listitem [ref=f3e268] [cursor=pointer]:
+              - generic [ref=f3e269]: Settings & Audit
+      - button "● Sign Out" [ref=f3e271]:
+        - generic [ref=f3e272]: ●
+        - text: Sign Out
+    - main [ref=f3e273]:
+      - generic [ref=f3e275]:
+        - generic [ref=f3e276]:
+          - generic [ref=f3e277]: Tasks on file
+          - emphasis [ref=f3e279]: "0"
+        - generic [ref=f3e280]:
+          - generic [ref=f3e281]: Completed
+          - generic [ref=f3e282]: "0"
+        - generic [ref=f3e283]:
+          - generic [ref=f3e284]: In Progress
+          - emphasis [ref=f3e286]: "0"
+        - generic [ref=f3e287]:
+          - generic [ref=f3e288]: AI Agents Deployed
+          - emphasis [ref=f3e290]: "0"
+          - generic [ref=f3e291]: 0 live now
+        - generic [ref=f3e292]:
+          - generic [ref=f3e293]: Avg Goal Progress
+          - generic [ref=f3e294]: 0%
+        - generic [ref=f3e295]:
+          - generic [ref=f3e296]: Urgent / Overdue
+          - generic [ref=f3e297]: "0"

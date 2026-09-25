@@ -1,0 +1,117 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Founder Os
+        - generic [ref=e9]: ·
+        - generic [ref=e10]: Founder OS Tech Labs
+      - generic [ref=e11]: FO-2026-7X4K
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "[10:32 AM]"
+          - generic [ref=e17]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=e18]: submitted deliverable for
+          - generic [ref=e19]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=e20]: ·
+        - generic [ref=e21]:
+          - generic [ref=e22]: "[10:15 AM]"
+          - generic [ref=e23]: 👤 Vikram Mehta
+          - generic [ref=e24]: completed task
+          - generic [ref=e25]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=e26]: ·
+        - generic [ref=e27]:
+          - generic [ref=e28]: "[09:40 AM]"
+          - generic [ref=e29]: 🤖 Sentinel - Code Review AI
+          - generic [ref=e30]: generated 42 unit test suites for
+          - generic [ref=e31]: "\"AI Model Provider Gateway\""
+          - generic [ref=e32]: ·
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Mode:"
+          - button "Founder" [ref=e36]
+          - button "Manager" [ref=e37]
+          - button "Employee" [ref=e38]
+        - button "Dispatch (2)" [ref=e40]
+        - button "+ Hire" [ref=e42]
+        - button "+ Task" [ref=e43]
+  - generic [ref=e44]:
+    - complementary [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Founder Os.
+          - generic [ref=e49]: Founder OS Tech Labs
+        - generic [ref=e50]:
+          - generic [ref=e51]: FO
+          - generic [ref=e52]:
+            - generic [ref=e53]: "@anita"
+            - generic [ref=e54]: TIER III · FO-2026-7X4K
+        - generic [ref=e55]:
+          - heading "Today" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Command Center
+              - generic [ref=e61]: "3"
+            - listitem [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: Tasks & Pipeline
+              - generic [ref=e64]: 1 rev
+            - listitem [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]:
+                - generic [ref=e563]: ●
+                - text: My Todos
+              - generic [ref=e67]: "1"
+        - generic [ref=e68]:
+          - heading "Organization" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: AI Workforce
+              - generic [ref=e73]: ● 2 live
+            - listitem [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: People & Roles
+              - generic [ref=e76]: 5 staff
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Strategic OKRs
+              - generic [ref=e79]: 78%
+        - generic [ref=e80]:
+          - heading "Archive & Audit" [level=4] [ref=e81]
+          - list [ref=e82]:
+            - listitem [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: Velocity Reports
+            - listitem [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Settings & Audit
+      - button "● Sign Out" [ref=e88]:
+        - generic [ref=e89]: ●
+        - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e564]:
+        - generic [ref=e565]:
+          - generic [ref=e566]:
+            - heading [level=2] [ref=e567]:
+              - text: My Todos —
+              - emphasis [ref=e568]: What do I need to do now?
+            - paragraph [ref=e569]: Focus mode for today's high-leverage deliverables. Execute and submit for manager review.
+          - generic [ref=e570]:
+            - text: "Completion:"
+            - generic [ref=e571]: 1 / 2 (50%)
+        - generic [ref=e572]:
+          - generic [ref=e573]:
+            - button "Today's Focus (1)" [ref=e574]
+            - button "In Progress (1)" [ref=e575]
+            - button "Completed (1)" [ref=e576]
+            - button "All Tasks" [ref=e577]
+          - button "+ Add Task" [ref=e578]
+        - generic [ref=e581]:
+          - generic [ref=e582]:
+            - button "☐" [ref=e583]
+            - generic [ref=e584]:
+              - generic [ref=e585]:
+                - heading "Design & Code Interactive Landing Page Hero for Founder OS V1" [level=4] [ref=e586] [cursor=pointer]
+                - generic [ref=e587]: "[URGENT] · [IN PROGRESS]"
+              - paragraph [ref=e588]: Implement the high-conversion hero section highlighting human + AI unified workforce with live preview cards and CTA modal.
+              - generic [ref=e589]:
+                - generic [ref=e590]: Due 2026-09-26
+                - generic [ref=e591]: ·
+                - generic [ref=e592]: By Sri Harish (Founder)
+                - generic [ref=e593]: ·
+                - generic [ref=e594]: 🎯 Launch Founder OS V1 Public Beta
+          - button "Submit Work →" [ref=e596]

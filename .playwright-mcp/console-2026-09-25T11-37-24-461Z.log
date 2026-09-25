@@ -1,0 +1,103 @@
+[     102ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:15804
+[   15107ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/:0
+[   27126ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Header`.  @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14210
+[ 2133700ms] ReferenceError: userRole is not defined
+    at AppProvider (http://localhost:5173/src/context/AppContext.tsx?t=1790338378102:293:4)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2133700ms] [WARNING] %s
+
+%s
+ An error occurred in the <AppProvider> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450
+[ 2134093ms] ReferenceError: userRole is not defined
+    at AppProvider (http://localhost:5173/src/context/AppContext.tsx?t=1790338378504:294:4)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2134093ms] [WARNING] %s
+
+%s
+ An error occurred in the <AppProvider> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450
+[ 2136754ms] ReferenceError: userRole is not defined
+    at AppProvider (http://localhost:5173/src/context/AppContext.tsx?t=1790338381172:294:4)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2136754ms] [WARNING] %s
+
+%s
+ An error occurred in the <AppProvider> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450
+[ 2141886ms] ReferenceError: userRole is not defined
+    at Header (http://localhost:5173/src/components/layout/Header.tsx?t=1790338386293:153:59)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2141882ms] [WARNING] %s
+
+%s
+ An error occurred in the <Header> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450
+[ 2704325ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:5173/src/components/ai/AIWorkforceView.tsx?t=1790338948775:0
+[ 2704329ms] [ERROR] [vite] Failed to reload /src/components/ai/AIWorkforceView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2718618ms] ReferenceError: aiEmployees is not defined
+    at Sidebar (http://localhost:5173/src/components/layout/Sidebar.tsx?t=1790338963029:12:25)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2718616ms] [WARNING] %s
+
+%s
+ An error occurred in the <Sidebar> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450
+[ 2719558ms] ReferenceError: runningAICount is not defined
+    at Sidebar (http://localhost:5173/src/components/layout/Sidebar.tsx?t=1790338963540:225:19)
+    at Object.react_stack_bottom_frame (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14142:12)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:4400:19)
+    at updateFunctionComponent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5775:16)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:6391:20)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:944:66)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9148:92)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9044:37)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:9028:6)
+    at performWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:8715:27)
+[ 2719557ms] [WARNING] %s
+
+%s
+ An error occurred in the <Sidebar> component. Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:5450

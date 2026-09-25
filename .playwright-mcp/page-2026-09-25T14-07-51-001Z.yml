@@ -1,0 +1,155 @@
+- generic [ref=f6e4]:
+  - banner [ref=f6e5]:
+    - generic [ref=f6e6]:
+      - generic [ref=f6e7]:
+        - generic [ref=f6e8]: Founder Os
+        - generic [ref=f6e9]: ·
+        - generic [ref=f6e10]: Browser Test Co
+      - generic [ref=f6e11]: FO-2026-A2DF
+    - generic [ref=f6e12]:
+      - generic [ref=f6e14]:
+        - generic [ref=f6e15]:
+          - generic [ref=f6e16]: "[07:34 PM]"
+          - generic [ref=f6e17]: 👑 B Test Founder
+          - generic [ref=f6e18]: updated employee profile
+          - generic [ref=f6e19]: "\"Ravi Hiretest II (QA Engineer)\""
+          - generic [ref=f6e20]: ·
+        - generic [ref=f6e21]:
+          - generic [ref=f6e22]: "[07:34 PM]"
+          - generic [ref=f6e23]: 👑 B Test Founder
+          - generic [ref=f6e24]: hired employee
+          - generic [ref=f6e25]: "\"Ravi Hiretest (QA Engineer)\""
+          - generic [ref=f6e26]: ·
+        - generic [ref=f6e27]:
+          - generic [ref=f6e28]: "[07:33 PM]"
+          - generic [ref=f6e29]: 👑 B Test Founder
+          - generic [ref=f6e30]: hired employee
+          - generic [ref=f6e31]: "\"Priya Hiretest (Product Designer)\""
+          - generic [ref=f6e32]: ·
+        - generic [ref=f6e33]:
+          - generic [ref=f6e34]: "[07:08 PM]"
+          - generic [ref=f6e35]: 👑 B Test Founder
+          - generic [ref=f6e36]: provisioned and deployed AI employee
+          - generic [ref=f6e37]: "\"AI · You run our multi-fallback (gpt-4o)\""
+          - generic [ref=f6e38]: ·
+        - generic [ref=f6e39]:
+          - generic [ref=f6e40]: "[07:00 PM]"
+          - generic [ref=f6e41]: 👑 B Test Founder
+          - generic [ref=f6e42]: provisioned and deployed AI employee
+          - generic [ref=f6e43]: "\"AI · You run our quality (gpt-4o)\""
+          - generic [ref=f6e44]: ·
+        - generic [ref=f6e45]:
+          - generic [ref=f6e46]: "[06:59 PM]"
+          - generic [ref=f6e47]: 👑 B Test Founder
+          - generic [ref=f6e48]: created role
+          - generic [ref=f6e49]: "\"QA Lead\""
+          - generic [ref=f6e50]: ·
+        - generic [ref=f6e51]:
+          - generic [ref=f6e52]: "[06:57 PM]"
+          - generic [ref=f6e53]: 👑 B Test Founder
+          - generic [ref=f6e54]: created department
+          - generic [ref=f6e55]: "\"QA Assurance\""
+          - generic [ref=f6e56]: ·
+      - generic [ref=f6e57]:
+        - button "Dispatch (0)" [ref=f6e59]
+        - button "+ Hire" [ref=f6e61]
+        - button "+ Task" [ref=f6e62]
+  - generic [ref=f6e63]:
+    - complementary [ref=f6e64]:
+      - generic [ref=f6e65]:
+        - generic [ref=f6e66]:
+          - generic [ref=f6e67]: Founder Os.
+          - generic [ref=f6e68]: Browser Test Co
+        - generic [ref=f6e69]:
+          - generic [ref=f6e70]: FO
+          - generic [ref=f6e71]:
+            - generic [ref=f6e72]: "@b"
+            - generic [ref=f6e73]: TIER III · FO-2026-A2DF
+        - generic [ref=f6e74]:
+          - heading "Today" [level=4] [ref=f6e75]
+          - list [ref=f6e76]:
+            - listitem [ref=f6e77] [cursor=pointer]:
+              - generic [ref=f6e78]: Command Center
+              - generic [ref=f6e80]: "0"
+            - listitem [ref=f6e81] [cursor=pointer]:
+              - generic [ref=f6e82]: Tasks & Pipeline
+              - generic [ref=f6e83]: "0"
+            - listitem [ref=f6e84] [cursor=pointer]:
+              - generic [ref=f6e85]: My Todos
+              - generic [ref=f6e86]: "0"
+        - generic [ref=f6e87]:
+          - heading "Organization" [level=4] [ref=f6e88]
+          - list [ref=f6e89]:
+            - listitem [ref=f6e90] [cursor=pointer]:
+              - generic [ref=f6e91]:
+                - generic [ref=f6e131]: ●
+                - text: People & Roles
+              - generic [ref=f6e92]: 2 staff
+            - listitem [ref=f6e93] [cursor=pointer]:
+              - generic [ref=f6e94]: Strategic OKRs
+              - generic [ref=f6e95]: 0%
+        - generic [ref=f6e96]:
+          - heading "Archive & Audit" [level=4] [ref=f6e97]
+          - list [ref=f6e98]:
+            - listitem [ref=f6e99] [cursor=pointer]:
+              - generic [ref=f6e100]: Velocity Reports
+            - listitem [ref=f6e101] [cursor=pointer]:
+              - generic [ref=f6e102]: Settings & Audit
+      - button "● Sign Out" [ref=f6e104]:
+        - generic [ref=f6e105]: ●
+        - text: Sign Out
+    - main [ref=f6e106]:
+      - generic [ref=f6e132]:
+        - generic [ref=f6e133]:
+          - generic [ref=f6e134]:
+            - heading "People, AI Agents, Roles & Organizational Chart" [level=2] [ref=f6e135]
+            - paragraph [ref=f6e136]: Human talent roster, deployed AI agents, custom role permissions, and departmental leads.
+          - button "+ Hire Employee" [ref=f6e137]
+        - generic [ref=f6e138]:
+          - button "Employees (2)" [ref=f6e139]
+          - button "AI Agents (1)" [ref=f6e140]
+          - button "Roles (1)" [ref=f6e141]
+          - button "Departments (1)" [ref=f6e142]
+        - generic [ref=f6e143]:
+          - generic [ref=f6e144]:
+            - generic [ref=f6e145]:
+              - generic [ref=f6e146]:
+                - generic [ref=f6e147]: Founder & Owner
+                - heading "B Test Founder" [level=3] [ref=f6e148]
+                - generic [ref=f6e149]: FO-2026-A2DF-Owner
+              - generic [ref=f6e150]: SH
+            - generic [ref=f6e151]:
+              - generic [ref=f6e152]: "Email: btest@browsertest.io"
+              - generic [ref=f6e153]: "Phone: +91 99999 00000"
+          - 'button "Engineering Ravi Hiretest II QA Engineer FO-2026-A2DF-EMP002 active Joined: 2026-09-25 Tasks Completed: 0 Click to view profile & credentials →" [ref=f6e154] [cursor=pointer]':
+            - generic [ref=f6e155]:
+              - generic [ref=f6e156]:
+                - generic [ref=f6e157]: Engineering
+                - heading "Ravi Hiretest II" [level=3] [ref=f6e158]
+                - generic [ref=f6e159]: QA Engineer
+                - text: FO-2026-A2DF-EMP002
+              - generic [ref=f6e160]: active
+            - generic [ref=f6e161]:
+              - generic [ref=f6e162]:
+                - generic [ref=f6e163]: "Joined:"
+                - generic [ref=f6e164]: 2026-09-25
+              - generic [ref=f6e165]:
+                - generic [ref=f6e166]: "Tasks Completed:"
+                - generic [ref=f6e167]: "0"
+            - generic [ref=f6e168]: Click to view profile & credentials →
+          - 'button "Design Priya Hiretest Product Designer FO-2026-A2DF-EMP001 active Joined: 2026-09-25 Tasks Completed: 0 Click to view profile & credentials →" [ref=f6e169] [cursor=pointer]':
+            - generic [ref=f6e170]:
+              - generic [ref=f6e171]:
+                - generic [ref=f6e172]: Design
+                - heading "Priya Hiretest" [level=3] [ref=f6e173]
+                - generic [ref=f6e174]: Product Designer
+                - text: FO-2026-A2DF-EMP001
+              - generic [ref=f6e175]: active
+            - generic [ref=f6e176]:
+              - generic [ref=f6e177]:
+                - generic [ref=f6e178]: "Joined:"
+                - generic [ref=f6e179]: 2026-09-25
+              - generic [ref=f6e180]:
+                - generic [ref=f6e181]: "Tasks Completed:"
+                - generic [ref=f6e182]: "0"
+            - generic [ref=f6e183]: Click to view profile & credentials →

@@ -1,0 +1,103 @@
+- generic [ref=f3e4]:
+  - banner [ref=f3e5]:
+    - generic [ref=f3e6]:
+      - generic [ref=f3e7]:
+        - generic [ref=f3e8]: Founder Os
+        - generic [ref=f3e9]: ·
+        - generic [ref=f3e10]: Founder OS Tech Labs
+      - generic [ref=f3e11]: FO-2026-7X4K
+    - generic [ref=f3e12]:
+      - generic [ref=f3e14]:
+        - generic [ref=f3e15]:
+          - generic [ref=f3e16]: "[05:55 PM]"
+          - generic [ref=f3e17]: 👑 Founder
+          - generic [ref=f3e18]: created and assigned task
+          - generic [ref=f3e19]: "\"Verify Phase 6\""
+          - generic [ref=f3e20]: ·
+        - generic [ref=f3e21]:
+          - generic [ref=f3e22]: "[10:32 AM]"
+          - generic [ref=f3e23]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=f3e24]: submitted deliverable for
+          - generic [ref=f3e25]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=f3e26]: ·
+        - generic [ref=f3e27]:
+          - generic [ref=f3e28]: "[10:15 AM]"
+          - generic [ref=f3e29]: 👤 Vikram Mehta
+          - generic [ref=f3e30]: completed task
+          - generic [ref=f3e31]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=f3e32]: ·
+        - generic [ref=f3e33]:
+          - generic [ref=f3e34]: "[09:40 AM]"
+          - generic [ref=f3e35]: 🤖 Sentinel - Code Review AI
+          - generic [ref=f3e36]: generated 42 unit test suites for
+          - generic [ref=f3e37]: "\"AI Model Provider Gateway\""
+          - generic [ref=f3e38]: ·
+      - generic [ref=f3e39]:
+        - button "Dispatch (2)" [ref=f3e41]
+        - button "+ Hire" [ref=f3e43]
+        - button "+ Task" [ref=f3e44]
+  - generic [ref=f3e45]:
+    - complementary [ref=f3e46]:
+      - generic [ref=f3e47]:
+        - generic [ref=f3e48]:
+          - generic [ref=f3e49]: Founder Os.
+          - generic [ref=f3e50]: Founder OS Tech Labs
+        - generic [ref=f3e51]:
+          - generic [ref=f3e52]: FO
+          - generic [ref=f3e53]:
+            - generic [ref=f3e54]: "@sri"
+            - generic [ref=f3e55]: TIER III · FO-2026-7X4K
+        - generic [ref=f3e56]:
+          - heading "Today" [level=4] [ref=f3e57]
+          - list [ref=f3e58]:
+            - listitem [ref=f3e59] [cursor=pointer]:
+              - generic [ref=f3e60]:
+                - generic [ref=f3e61]: ●
+                - text: Command Center
+              - generic [ref=f3e62]: "4"
+            - listitem [ref=f3e63] [cursor=pointer]:
+              - generic [ref=f3e64]: Tasks & Pipeline
+              - generic [ref=f3e65]: 1 rev
+            - listitem [ref=f3e66] [cursor=pointer]:
+              - generic [ref=f3e67]: My Todos
+              - generic [ref=f3e68]: "1"
+        - generic [ref=f3e69]:
+          - heading "Organization" [level=4] [ref=f3e70]
+          - list [ref=f3e71]:
+            - listitem [ref=f3e72] [cursor=pointer]:
+              - generic [ref=f3e73]: People & Roles
+              - generic [ref=f3e74]: 5 staff
+            - listitem [ref=f3e75] [cursor=pointer]:
+              - generic [ref=f3e76]: Strategic OKRs
+              - generic [ref=f3e77]: 65%
+        - generic [ref=f3e78]:
+          - heading "Archive & Audit" [level=4] [ref=f3e79]
+          - list [ref=f3e80]:
+            - listitem [ref=f3e81] [cursor=pointer]:
+              - generic [ref=f3e82]: Velocity Reports
+            - listitem [ref=f3e83] [cursor=pointer]:
+              - generic [ref=f3e84]: Settings & Audit
+      - button "● Sign Out" [ref=f3e86]:
+        - generic [ref=f3e87]: ●
+        - text: Sign Out
+    - main [ref=f3e88]:
+      - generic [ref=f3e90]:
+        - generic [ref=f3e91]:
+          - generic [ref=f3e92]: Tasks on file
+          - emphasis [ref=f3e94]: "4"
+        - generic [ref=f3e95]:
+          - generic [ref=f3e96]: Completed
+          - generic [ref=f3e97]: "1"
+        - generic [ref=f3e98]:
+          - generic [ref=f3e99]: In Progress
+          - emphasis [ref=f3e101]: "2"
+        - generic [ref=f3e102]:
+          - generic [ref=f3e103]: AI Agents Deployed
+          - emphasis [ref=f3e105]: "3"
+          - generic [ref=f3e106]: 2 live now
+        - generic [ref=f3e107]:
+          - generic [ref=f3e108]: Avg Goal Progress
+          - generic [ref=f3e109]: 65%
+        - generic [ref=f3e110]:
+          - generic [ref=f3e111]: Urgent / Overdue
+          - generic [ref=f3e112]: "1"

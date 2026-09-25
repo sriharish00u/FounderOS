@@ -1,0 +1,29 @@
+- generic [ref=e49]:
+  - banner [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]: ◆
+      - text: Founder Os
+    - button "← Back To Home" [ref=e53]
+  - main [ref=e54]:
+    - generic [ref=e55]:
+      - heading "Register Your Company" [level=1] [ref=e70]
+      - paragraph [ref=e57]: Create a company workspace, then hire your team
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - button "Sign In" [ref=e60]
+          - button "Register" [active] [ref=e61]
+        - generic [ref=e62]:
+          - group "Your Company" [ref=e71]:
+            - generic [ref=e73]:
+              - textbox "Company name" [ref=e74]
+              - generic [ref=e75]:
+                - textbox "Type" [ref=e76]
+                - textbox "Location" [ref=e77]
+          - group "Founder Account" [ref=e78]:
+            - generic [ref=e80]:
+              - textbox "Your full name" [ref=e81]
+              - textbox "you@company.com" [ref=e82]
+              - generic [ref=e83]:
+                - textbox "Phone" [ref=e84]
+                - textbox "Password" [ref=e85]
+          - button "Create Company Workspace" [ref=e86]

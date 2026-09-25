@@ -1,0 +1,238 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Founder Os
+        - generic [ref=e9]: ·
+        - generic [ref=e10]: Founder OS Tech Labs
+      - generic [ref=e11]: FO-2026-7X4K
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "[10:32 AM]"
+          - generic [ref=e17]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=e18]: submitted deliverable for
+          - generic [ref=e19]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=e20]: ·
+        - generic [ref=e21]:
+          - generic [ref=e22]: "[10:15 AM]"
+          - generic [ref=e23]: 👤 Vikram Mehta
+          - generic [ref=e24]: completed task
+          - generic [ref=e25]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=e26]: ·
+        - generic [ref=e27]:
+          - generic [ref=e28]: "[09:40 AM]"
+          - generic [ref=e29]: 🤖 Sentinel - Code Review AI
+          - generic [ref=e30]: generated 42 unit test suites for
+          - generic [ref=e31]: "\"AI Model Provider Gateway\""
+          - generic [ref=e32]: ·
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Mode:"
+          - button "Founder" [ref=e36]
+          - button "Manager" [ref=e37]
+          - button "Employee" [ref=e38]
+        - button "Dispatch (2)" [ref=e40]
+        - button "+ Hire" [ref=e42]
+        - button "+ Task" [ref=e43]
+  - generic [ref=e44]:
+    - complementary [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Founder Os.
+          - generic [ref=e49]: Founder OS Tech Labs
+        - generic [ref=e50]:
+          - generic [ref=e51]: FO
+          - generic [ref=e52]:
+            - generic [ref=e53]: "@anita"
+            - generic [ref=e54]: TIER III · FO-2026-7X4K
+        - generic [ref=e55]:
+          - heading "Today" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Command Center
+              - generic [ref=e61]: "3"
+            - listitem [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: Tasks & Pipeline
+              - generic [ref=e64]: 1 rev
+            - listitem [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: My Todos
+              - generic [ref=e67]: "1"
+        - generic [ref=e68]:
+          - heading "Organization" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]:
+                - generic [ref=e366]: ●
+                - text: AI Workforce
+              - generic [ref=e73]: ● 2 live
+            - listitem [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: People & Roles
+              - generic [ref=e76]: 5 staff
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Strategic OKRs
+              - generic [ref=e79]: 78%
+        - generic [ref=e80]:
+          - heading "Archive & Audit" [level=4] [ref=e81]
+          - list [ref=e82]:
+            - listitem [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: Velocity Reports
+            - listitem [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]: Settings & Audit
+      - button "● Sign Out" [ref=e88]:
+        - generic [ref=e89]: ●
+        - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e367]:
+        - generic [ref=e368]:
+          - generic [ref=e369]:
+            - heading "AI Workforce & Persistent Memory" [level=2] [ref=e370]
+            - paragraph [ref=e371]: "\"The AI should remember what job it was hired to do.\" Autonomous agents with dedicated roles & memory."
+          - button "+ Hire AI Employee" [ref=e372]
+        - generic [ref=e373]:
+          - generic [ref=e374]:
+            - generic [ref=e375]: Active AI Agents
+            - generic [ref=e376]: 3 Deployed
+            - generic [ref=e377]: ● 2 Running In Sprints
+          - generic [ref=e378]:
+            - generic [ref=e379]: Completed Deliverables
+            - generic [ref=e380]: 455 Shipped
+            - generic [ref=e381]: 98.4% first-pass manager approval
+          - generic [ref=e382]:
+            - generic [ref=e383]: Core Engines
+            - generic [ref=e384]: Multi-Model
+            - generic [ref=e385]: Anthropic · OpenAI · Google · Groq
+        - generic [ref=e386]:
+          - generic [ref=e387]:
+            - generic [ref=e388]:
+              - generic [ref=e389]:
+                - generic [ref=e390]:
+                  - heading "Sentinel - Code Review & QA Bot" [level=3] [ref=e391]
+                  - generic [ref=e392]: AI Code Reviewer & QA Bot
+                  - generic [ref=e393]: "Reports To: Vikram Mehta"
+                - generic [ref=e394]: Idle
+              - generic [ref=e395]:
+                - generic [ref=e396]:
+                  - generic [ref=e397]: "Engine:"
+                  - generic [ref=e398]: OpenAI (gpt-4o)
+                - generic [ref=e399]:
+                  - generic [ref=e400]: "Memory Tokens:"
+                  - generic [ref=e401]: 6150 T
+                - generic [ref=e402]:
+                  - generic [ref=e403]: "Tasks Completed:"
+                  - generic [ref=e404]: "215"
+              - generic [ref=e405]:
+                - generic [ref=e406]: "Directives:"
+                - list [ref=e407]:
+                  - listitem [ref=e408]:
+                    - generic [ref=e409]: ·
+                    - generic [ref=e410]: Scan incoming pull requests for edge-case errors
+                  - listitem [ref=e411]:
+                    - generic [ref=e412]: ·
+                    - generic [ref=e413]: Ensure 100% strict TypeScript compliance with no implicit any
+            - generic [ref=e414]:
+              - button "Inspect Memory" [active] [ref=e415]
+              - button "+ Task" [ref=e416]
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - generic [ref=e420]:
+                  - heading "Apex - Lead Research & Prospector" [level=3] [ref=e421]
+                  - generic [ref=e422]: B2B Enterprise Closer
+                  - generic [ref=e423]: "Reports To: Ananya Roy"
+                - generic [ref=e424]: ● Running
+              - generic [ref=e425]:
+                - generic [ref=e426]:
+                  - generic [ref=e427]: "Engine:"
+                  - generic [ref=e428]: Google (gemini-1.5-pro)
+                - generic [ref=e429]:
+                  - generic [ref=e430]: "Memory Tokens:"
+                  - generic [ref=e431]: 3890 T
+                - generic [ref=e432]:
+                  - generic [ref=e433]: "Tasks Completed:"
+                  - generic [ref=e434]: "98"
+              - generic [ref=e435]:
+                - generic [ref=e436]: "Directives:"
+                - list [ref=e437]:
+                  - listitem [ref=e438]:
+                    - generic [ref=e439]: ·
+                    - generic [ref=e440]: Identify fast-growing tech companies scaling beyond 50 employees
+                  - listitem [ref=e441]:
+                    - generic [ref=e442]: ·
+                    - generic [ref=e443]: Extract founder/CTO pain points regarding human + AI team management
+            - generic [ref=e444]:
+              - button "Inspect Memory" [ref=e445]
+              - button "+ Task" [ref=e446]
+          - generic [ref=e447]:
+            - generic [ref=e448]:
+              - generic [ref=e449]:
+                - generic [ref=e450]:
+                  - heading "Nova - Copy & Strategy AI" [level=3] [ref=e451]
+                  - generic [ref=e452]: AI Copy & Creative Generator
+                  - generic [ref=e453]: "Reports To: Priya Sharma"
+                - generic [ref=e454]: ● Running
+              - generic [ref=e455]:
+                - generic [ref=e456]:
+                  - generic [ref=e457]: "Engine:"
+                  - generic [ref=e458]: Anthropic (claude-3-5-sonnet-20241022)
+                - generic [ref=e459]:
+                  - generic [ref=e460]: "Memory Tokens:"
+                  - generic [ref=e461]: 4280 T
+                - generic [ref=e462]:
+                  - generic [ref=e463]: "Tasks Completed:"
+                  - generic [ref=e464]: "142"
+              - generic [ref=e465]:
+                - generic [ref=e466]: "Directives:"
+                - list [ref=e467]:
+                  - listitem [ref=e468]:
+                    - generic [ref=e469]: ·
+                    - generic [ref=e470]: Produce multi-angle paid social ad copy for Meta and TikTok
+                  - listitem [ref=e471]:
+                    - generic [ref=e472]: ·
+                    - generic [ref=e473]: Draft viral LinkedIn authority posts and founder stories
+            - generic [ref=e474]:
+              - button "Inspect Memory" [ref=e475]
+              - button "+ Task" [ref=e476]
+  - generic [ref=e478]:
+    - generic [ref=e479]:
+      - generic [ref=e480]:
+        - generic [ref=e481]: Organizational Memory Dossier
+        - heading "Sentinel - Code Review & QA Bot" [level=3] [ref=e482]
+        - generic [ref=e483]: OpenAI · gpt-4o
+      - button "[ Close ]" [ref=e484]
+    - generic [ref=e485]:
+      - generic [ref=e486]:
+        - generic [ref=e487]:
+          - generic [ref=e488]: "Context Size:"
+          - generic [ref=e489]: 6150 tokens
+        - generic [ref=e490]:
+          - generic [ref=e491]: "Completed Work:"
+          - generic [ref=e492]: 215 tasks
+        - generic [ref=e493]:
+          - generic [ref=e494]: "Last Synced:"
+          - text: 2026-09-24 09:40 AM
+      - generic [ref=e495]:
+        - heading "1. Identity & Role Blueprint" [level=4] [ref=e496]
+        - generic [ref=e497]: Sentinel is the autonomous QA and TypeScript architecture specialist.
+      - generic [ref=e498]:
+        - heading "2. Core Responsibilities" [level=4] [ref=e499]
+        - generic [ref=e500]:
+          - generic [ref=e501]:
+            - generic [ref=e502]: "01."
+            - generic [ref=e503]: Scan incoming pull requests for edge-case errors
+          - generic [ref=e504]:
+            - generic [ref=e505]: "02."
+            - generic [ref=e506]: Ensure 100% strict TypeScript compliance with no implicit any
+          - generic [ref=e507]:
+            - generic [ref=e508]: "03."
+            - generic [ref=e509]: Verify zero console warnings and complete test coverage
+      - generic [ref=e510]:
+        - generic [ref=e511]:
+          - heading "3. Operating Directives & Memory Rules" [level=4] [ref=e512]
+          - button "[ Edit Directives ]" [ref=e513]
+        - generic [ref=e514]: "Report code review feedback organized into: 🔴 Blocker, 🟡 Suggestion, 🟢 Performance Win. Always provide exact diff snippets."
+      - generic [ref=e515]:
+        - heading "4. Learned Winning Patterns" [level=4] [ref=e516]
+        - generic [ref=e517]:
+          - generic [ref=e518]: ★ Express async routes require centralized error middleware wrapper
+          - generic [ref=e519]: ★ Tailwind v4 theme variables must stay synchronized with CSS tokens

@@ -1,0 +1,28 @@
+[     213ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:15804
+[    2132ms] [ERROR] Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information. 
+
+Check the render method of `Header`.  @ http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=53dae5d0:14210
+[  154148ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/:0
+[  182883ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost:5173/:0
+[ 2109577ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/goals/GoalsView.tsx?t=1790347322946:0
+[ 2109581ms] [ERROR] [vite] Failed to reload /src/components/goals/GoalsView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2122734ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347336117:0
+[ 2122735ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2146062ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347359445:0
+[ 2146063ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2152878ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347366270:0
+[ 2152879ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2158844ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347372228:0
+[ 2158844ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2165799ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347379178:0
+[ 2165799ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2170272ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347383659:0
+[ 2170273ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2174045ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347387435:0
+[ 2174046ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2177693ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/people/PeopleView.tsx?t=1790347391072:0
+[ 2177694ms] [ERROR] [vite] Failed to reload /src/components/people/PeopleView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2351800ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/settings/SettingsView.tsx?t=1790347565166:0
+[ 2351801ms] [ERROR] [vite] Failed to reload /src/components/settings/SettingsView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962
+[ 2355662ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:5173/src/components/settings/SettingsView.tsx?t=1790347569038:0
+[ 2355663ms] [ERROR] [vite] Failed to reload /src/components/settings/SettingsView.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above) @ http://localhost:5173/@vite/client:962

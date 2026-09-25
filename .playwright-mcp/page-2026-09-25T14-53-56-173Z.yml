@@ -1,0 +1,153 @@
+- generic [ref=f8e4]:
+  - banner [ref=f8e5]:
+    - generic [ref=f8e6]:
+      - generic [ref=f8e7]:
+        - generic [ref=f8e8]: Founder Os
+        - generic [ref=f8e9]: ·
+        - generic [ref=f8e10]: Browser Test Co
+      - generic [ref=f8e11]: FO-2026-A2DF
+    - generic [ref=f8e12]:
+      - generic [ref=f8e14]:
+        - generic [ref=f8e15]:
+          - generic [ref=f8e16]: "[08:20 PM]"
+          - generic [ref=f8e17]: 👑 Onboard Test Emp
+          - generic [ref=f8e18]: completed onboarding
+          - generic [ref=f8e19]: "\"Onboard Test Emp (employee)\""
+          - generic [ref=f8e20]: ·
+        - generic [ref=f8e21]:
+          - generic [ref=f8e22]: "[08:17 PM]"
+          - generic [ref=f8e23]: 👑 B Test Founder
+          - generic [ref=f8e24]: hired employee
+          - generic [ref=f8e25]: "\"Onboard Test Emp (Frontend Developer)\""
+          - generic [ref=f8e26]: ·
+        - generic [ref=f8e27]:
+          - generic [ref=f8e28]: "[08:06 PM]"
+          - generic [ref=f8e29]: 👑 Onboard Check
+          - generic [ref=f8e30]: completed onboarding
+          - generic [ref=f8e31]: "\"Onboard Check (employee)\""
+          - generic [ref=f8e32]: ·
+        - generic [ref=f8e33]:
+          - generic [ref=f8e34]: "[08:05 PM]"
+          - generic [ref=f8e35]: 👑 B Test Founder
+          - generic [ref=f8e36]: hired employee
+          - generic [ref=f8e37]: "\"Onboard Check (Designer)\""
+          - generic [ref=f8e38]: ·
+        - generic [ref=f8e39]:
+          - generic [ref=f8e40]: "[07:38 PM]"
+          - generic [ref=f8e41]: 👑 B Test Founder
+          - generic [ref=f8e42]: updated employee profile
+          - generic [ref=f8e43]: "\"Ravi Hiretest II (QA Engineer)\""
+          - generic [ref=f8e44]: ·
+        - generic [ref=f8e45]:
+          - generic [ref=f8e46]: "[07:34 PM]"
+          - generic [ref=f8e47]: 👑 B Test Founder
+          - generic [ref=f8e48]: updated employee profile
+          - generic [ref=f8e49]: "\"Ravi Hiretest II (QA Engineer)\""
+          - generic [ref=f8e50]: ·
+        - generic [ref=f8e51]:
+          - generic [ref=f8e52]: "[07:34 PM]"
+          - generic [ref=f8e53]: 👑 B Test Founder
+          - generic [ref=f8e54]: hired employee
+          - generic [ref=f8e55]: "\"Ravi Hiretest (QA Engineer)\""
+          - generic [ref=f8e56]: ·
+        - generic [ref=f8e57]:
+          - generic [ref=f8e58]: "[07:33 PM]"
+          - generic [ref=f8e59]: 👑 B Test Founder
+          - generic [ref=f8e60]: hired employee
+          - generic [ref=f8e61]: "\"Priya Hiretest (Product Designer)\""
+          - generic [ref=f8e62]: ·
+        - generic [ref=f8e63]:
+          - generic [ref=f8e64]: "[07:08 PM]"
+          - generic [ref=f8e65]: 👑 B Test Founder
+          - generic [ref=f8e66]: provisioned and deployed AI employee
+          - generic [ref=f8e67]: "\"AI · You run our multi-fallback (gpt-4o)\""
+          - generic [ref=f8e68]: ·
+        - generic [ref=f8e69]:
+          - generic [ref=f8e70]: "[07:00 PM]"
+          - generic [ref=f8e71]: 👑 B Test Founder
+          - generic [ref=f8e72]: provisioned and deployed AI employee
+          - generic [ref=f8e73]: "\"AI · You run our quality (gpt-4o)\""
+          - generic [ref=f8e74]: ·
+        - generic [ref=f8e75]:
+          - generic [ref=f8e76]: "[06:59 PM]"
+          - generic [ref=f8e77]: 👑 B Test Founder
+          - generic [ref=f8e78]: created role
+          - generic [ref=f8e79]: "\"QA Lead\""
+          - generic [ref=f8e80]: ·
+        - generic [ref=f8e81]:
+          - generic [ref=f8e82]: "[06:57 PM]"
+          - generic [ref=f8e83]: 👑 B Test Founder
+          - generic [ref=f8e84]: created department
+          - generic [ref=f8e85]: "\"QA Assurance\""
+          - generic [ref=f8e86]: ·
+      - button "Dispatch (0)" [ref=f8e89]
+  - generic [ref=f8e90]:
+    - complementary [ref=f8e91]:
+      - generic [ref=f8e92]:
+        - generic [ref=f8e93]:
+          - generic [ref=f8e94]: Founder Os.
+          - generic [ref=f8e95]: Browser Test Co
+        - generic [ref=f8e96]:
+          - generic [ref=f8e97]: FO
+          - generic [ref=f8e98]:
+            - generic [ref=f8e99]: "@onboard"
+            - generic [ref=f8e100]: TIER III · FO-2026-A2DF
+        - generic [ref=f8e101]:
+          - heading "Today" [level=4] [ref=f8e102]
+          - list [ref=f8e103]:
+            - listitem [ref=f8e104] [cursor=pointer]:
+              - generic [ref=f8e105]: Command Center
+              - generic [ref=f8e107]: "0"
+            - listitem [ref=f8e108] [cursor=pointer]:
+              - generic [ref=f8e109]: Tasks & Pipeline
+              - generic [ref=f8e110]: "0"
+            - listitem [ref=f8e111] [cursor=pointer]:
+              - generic [ref=f8e112]: My Todos
+              - generic [ref=f8e113]: "0"
+        - generic [ref=f8e114]:
+          - heading "Organization" [level=4] [ref=f8e115]
+          - list [ref=f8e116]:
+            - listitem [ref=f8e117] [cursor=pointer]:
+              - generic [ref=f8e118]:
+                - generic [ref=f8e233]: ●
+                - text: People & Roles
+              - generic [ref=f8e119]: 1 teammate
+            - listitem [ref=f8e120] [cursor=pointer]:
+              - generic [ref=f8e121]: Strategic OKRs
+              - generic [ref=f8e122]: 0%
+        - generic [ref=f8e123]:
+          - heading "Archive & Audit" [level=4] [ref=f8e124]
+          - list [ref=f8e125]:
+            - listitem [ref=f8e126] [cursor=pointer]:
+              - generic [ref=f8e127]: Velocity Reports
+            - listitem [ref=f8e128] [cursor=pointer]:
+              - generic [ref=f8e129]: Settings & Audit
+      - button "● Sign Out" [ref=f8e131]:
+        - generic [ref=f8e132]: ●
+        - text: Sign Out
+    - main [ref=f8e133]:
+      - generic [ref=f8e234]:
+        - generic [ref=f8e236]:
+          - heading "People, AI Agents, Roles & Organizational Chart" [level=2] [ref=f8e237]
+          - paragraph [ref=f8e238]: Human talent roster, deployed AI agents, custom role permissions, and departmental leads.
+        - generic [ref=f8e239]:
+          - button "Employees (1)" [ref=f8e240]
+          - button "AI Agents (0)" [ref=f8e241]
+          - button "Roles (0)" [ref=f8e242]
+          - button "Departments (0)" [ref=f8e243]
+        - 'button "Engineering Onboard Test Emp Frontend Developer FO-2026-A2DF-EMP001 active Joined: 2026-09-25 Tasks Completed: 0 Click to view profile & credentials →" [ref=f8e245] [cursor=pointer]':
+          - generic [ref=f8e246]:
+            - generic [ref=f8e247]:
+              - generic [ref=f8e248]: Engineering
+              - heading "Onboard Test Emp" [level=3] [ref=f8e249]
+              - generic [ref=f8e250]: Frontend Developer
+              - text: FO-2026-A2DF-EMP001
+            - generic [ref=f8e251]: active
+          - generic [ref=f8e252]:
+            - generic [ref=f8e253]:
+              - generic [ref=f8e254]: "Joined:"
+              - generic [ref=f8e255]: 2026-09-25
+            - generic [ref=f8e256]:
+              - generic [ref=f8e257]: "Tasks Completed:"
+              - generic [ref=f8e258]: "0"
+          - generic [ref=f8e259]: Click to view profile & credentials →

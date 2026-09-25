@@ -1,0 +1,126 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]: Founder Os
+        - generic [ref=e9]: ·
+        - generic [ref=e10]: Founder OS Tech Labs
+      - generic [ref=e11]: FO-2026-7X4K
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: "[10:32 AM]"
+          - generic [ref=e17]: 🤖 Nova - Copy & Strategy AI
+          - generic [ref=e18]: submitted deliverable for
+          - generic [ref=e19]: "\"Generate 20 Multi-Angle Paid Ad Copy Variants\""
+          - generic [ref=e20]: ·
+        - generic [ref=e21]:
+          - generic [ref=e22]: "[10:15 AM]"
+          - generic [ref=e23]: 👤 Vikram Mehta
+          - generic [ref=e24]: completed task
+          - generic [ref=e25]: "\"Multi-Tenant Organization & Role-Based Auth Middleware\""
+          - generic [ref=e26]: ·
+        - generic [ref=e27]:
+          - generic [ref=e28]: "[09:40 AM]"
+          - generic [ref=e29]: 🤖 Sentinel - Code Review AI
+          - generic [ref=e30]: generated 42 unit test suites for
+          - generic [ref=e31]: "\"AI Model Provider Gateway\""
+          - generic [ref=e32]: ·
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "Mode:"
+          - button "Founder" [ref=e36]
+          - button "Manager" [ref=e37]
+          - button "Employee" [ref=e38]
+        - button "Dispatch (2)" [ref=e40]
+        - button "+ Hire" [ref=e42]
+        - button "+ Task" [ref=e43]
+  - generic [ref=e44]:
+    - complementary [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - generic [ref=e48]: Founder Os.
+          - generic [ref=e49]: Founder OS Tech Labs
+        - generic [ref=e50]:
+          - generic [ref=e51]: FO
+          - generic [ref=e52]:
+            - generic [ref=e53]: "@anita"
+            - generic [ref=e54]: TIER III · FO-2026-7X4K
+        - generic [ref=e55]:
+          - heading "Today" [level=4] [ref=e56]
+          - list [ref=e57]:
+            - listitem [ref=e58] [cursor=pointer]:
+              - generic [ref=e59]: Command Center
+              - generic [ref=e61]: "3"
+            - listitem [ref=e62] [cursor=pointer]:
+              - generic [ref=e63]: Tasks & Pipeline
+              - generic [ref=e64]: 1 rev
+            - listitem [ref=e65] [cursor=pointer]:
+              - generic [ref=e66]: My Todos
+              - generic [ref=e67]: "1"
+        - generic [ref=e68]:
+          - heading "Organization" [level=4] [ref=e69]
+          - list [ref=e70]:
+            - listitem [ref=e71] [cursor=pointer]:
+              - generic [ref=e72]: AI Workforce
+              - generic [ref=e73]: ● 2 live
+            - listitem [ref=e74] [cursor=pointer]:
+              - generic [ref=e75]: People & Roles
+              - generic [ref=e76]: 5 staff
+            - listitem [ref=e77] [cursor=pointer]:
+              - generic [ref=e78]: Strategic OKRs
+              - generic [ref=e79]: 78%
+        - generic [ref=e80]:
+          - heading "Archive & Audit" [level=4] [ref=e81]
+          - list [ref=e82]:
+            - listitem [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: Velocity Reports
+            - listitem [ref=e85] [cursor=pointer]:
+              - generic [ref=e86]:
+                - generic [ref=e520]: ●
+                - text: Settings & Audit
+      - button "● Sign Out" [ref=e88]:
+        - generic [ref=e89]: ●
+        - text: Sign Out
+    - main [ref=e90]:
+      - generic [ref=e521]:
+        - generic [ref=e522]:
+          - heading "Company Settings & Organizational Governance" [level=2] [ref=e523]
+          - paragraph [ref=e524]: Master registration parameters and co-founder permissions.
+        - generic [ref=e525]:
+          - generic [ref=e526]:
+            - heading "Company Registration Profile" [level=3] [ref=e527]
+            - generic [ref=e528]:
+              - generic [ref=e529]:
+                - generic [ref=e530]: Company Name *
+                - textbox [ref=e531]: Founder OS Tech Labs
+              - generic [ref=e532]:
+                - generic [ref=e533]: Unique Company Code *
+                - textbox [ref=e534]: FO-2026-7X4K
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - generic [ref=e537]: Industry / Product Type
+                - textbox [ref=e538]: AI Software & Operating Systems
+              - generic [ref=e539]:
+                - generic [ref=e540]: HQ Address
+                - textbox [ref=e541]: Suite 402, Quantum Tower, Bengaluru, India
+            - generic [ref=e542]:
+              - generic [ref=e543]:
+                - generic [ref=e544]: Online / Distributed Workforce Mode
+                - generic [ref=e545]: Enables real-time human and AI agent synchronization across remote hubs.
+              - button "[ Online ]" [ref=e546]
+          - generic [ref=e547]:
+            - generic [ref=e548]:
+              - heading "Co-Founders Structure" [level=3] [ref=e549]
+              - 'button "Co-Founders: [ On ]" [ref=e550]'
+            - generic [ref=e551]:
+              - generic [ref=e552]:
+                - generic [ref=e553]:
+                  - generic [ref=e554]: "Co-Founder #1"
+                  - button "[ Remove ]" [ref=e555]
+                - generic [ref=e556]:
+                  - textbox "Co-founder Name" [ref=e557]: Rohan Verma
+                  - textbox "Email" [ref=e558]: rohan@founderos.io
+                  - textbox "Phone" [ref=e559]: +91 98765 43211
+              - button "+ Add Co-Founder" [ref=e560]
+          - button "Save Configuration →" [ref=e562]

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4ede0;
+  --panel: #f9f3e7;
+  --ink: #1f1c14;
+  --muted: #7a7264;
+  --rule: #d6cdb6;
+  --accent: #c14a2b;
+  --good: #406b3a;
+  --bad: #b6422f;
+  --serif-display: 'DM Serif Display', 'Iowan Old Style', Georgia, serif;
+  --serif-body: 'DM Serif Text', 'Iowan Old Style', Georgia, serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif-body);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.font-serif-display {
+  font-family: var(--serif-display);
+}
+
+.font-serif-body {
+  font-family: var(--serif-body);
+}
+
+.font-mono-custom {
+  font-family: var(--mono);
+}
+
+.tnum {
+  font-feature-settings: 'tnum';
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}

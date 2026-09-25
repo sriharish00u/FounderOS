@@ -76,6 +76,9 @@ const EmployeeSchema: Schema = new Schema(
   { timestamps: true }
 );
 
+EmployeeSchema.index({ companyCode: 1, status: 1 });
+EmployeeSchema.index({ companyCode: 1, department: 1 });
+
 EmployeeSchema.plugin(tenancyPlugin);
 
 export const Employee = mongoose.model<IEmployee>('Employee', EmployeeSchema);

@@ -68,6 +68,30 @@ export const ReportsView: React.FC = () => {
           >
             Yearly 2026
           </button>
+          <button
+            onClick={async () => {
+              try {
+                const raw = localStorage.getItem('founder_os_auth');
+                const token = raw ? JSON.parse(raw).token : '';
+                const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+                const res = await fetch(`${apiUrl}/activities?format=csv`, {
+                  headers: token ? { Authorization: `Bearer ${token}` } : {},
+                });
+                const blob = await res.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'founder_os_audit_log.csv';
+                a.click();
+              } catch (err) {
+                console.error('Failed to export CSV audit log:', err);
+              }
+            }}
+            className="px-3 py-1 bg-[var(--paper)] text-[var(--ink)] border border-[var(--ink)] font-bold hover:bg-[var(--ink)] hover:text-[var(--paper)] transition-colors"
+            type="button"
+          >
+            ↓ Export CSV
+          </button>
         </div>
       </div>
 

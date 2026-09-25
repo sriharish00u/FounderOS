@@ -22,6 +22,9 @@ const NotificationSchema: Schema = new Schema(
   { timestamps: true }
 );
 
+NotificationSchema.index({ companyCode: 1, read: 1, createdAt: -1 });
+NotificationSchema.index({ companyCode: 1, createdAt: -1 });
+
 NotificationSchema.plugin(tenancyPlugin);
 
 export const Notification = mongoose.model<INotification>('Notification', NotificationSchema);

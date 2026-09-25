@@ -26,6 +26,9 @@ const ActivitySchema: Schema = new Schema(
   { timestamps: true }
 );
 
+ActivitySchema.index({ companyCode: 1, createdAt: -1 });
+ActivitySchema.index({ companyCode: 1, category: 1 });
+
 ActivitySchema.plugin(tenancyPlugin);
 
 export const Activity = mongoose.model<IActivity>('Activity', ActivitySchema);

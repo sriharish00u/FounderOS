@@ -37,4 +37,45 @@ router.get('/summary', requireAuth, async (req: Request, res: Response) => {
   }
 });
 
+router.get('/analytics', requireAuth, async (req: Request, res: Response) => {
+  try {
+    const user = (req as Request & { user?: AuthUser }).user;
+    const companyCode = user?.companyCode ?? 'FO-2026-7X4K';
+    const { range } = req.query;
+
+    const humanTasksCompleted = await Task.countDocuments({ companyCode, assigneeType: 'human', status: 'COMPLETED' });
+    const aiTasksCompleted = await Task.countDocuments({ companyCode, assigneeType: 'ai', status: 'COMPLETED' });
+    const pendingReviews = await Task.countDocuments({ companyCode, status: { $in: ['SUBMITTED', 'REVIEW'] } });
+
+    const allTasks = await Task.find({ companyCode }).sort({ createdAt: -1 });
+    const deptBreakdown: Record<string, { total: number; completed: number }> = {};
+    for (const t of allTasks) {
+      const dept = t.department || 'General';
+      if (!deptBreakdown[dept]) deptBreakdown[dept] = { total: 0, completed: 0 };
+      deptBreakdown[dept].total += 1;
+      if (t.status === 'COMPLETED') deptBreakdown[dept].completed += 1;
+    }
+
+    const goals = await Goal.find({ companyCode });
+
+    res.json({
+      range: range || 'all',
+      humanTasksCompleted,
+      aiTasksCompleted,
+      pendingReviews,
+      totalTasks: allTasks.length,
+      deptBreakdown,
+      goals: goals.map((g) => ({
+        id: String(g._id),
+        title: g.title,
+        progressPercent: g.progressPercent,
+        status: g.status,
+        department: g.department,
+      })),
+    });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch analytics' });
+  }
+});
+
 export default router;

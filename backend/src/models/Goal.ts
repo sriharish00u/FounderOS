@@ -40,6 +40,9 @@ const GoalSchema: Schema = new Schema(
   { timestamps: true }
 );
 
+GoalSchema.index({ companyCode: 1, status: 1 });
+GoalSchema.index({ companyCode: 1, department: 1 });
+
 GoalSchema.plugin(tenancyPlugin);
 
 export const Goal = mongoose.model<IGoal>('Goal', GoalSchema);

@@ -12,6 +12,27 @@ export const CompanyDashboard: React.FC = () => {
 
   return (
     <div className="p-[30px_36px_44px] max-w-6xl">
+      {urgentCount > 0 && (
+        <div className="mb-6 p-4 border border-[var(--bad)] bg-[var(--panel)] text-[var(--ink)] flex items-center justify-between">
+          <div>
+            <div className="font-serif-display font-bold text-[16px] text-[var(--bad)]">Attention Required</div>
+            <div className="font-serif-body italic text-[13px] text-[var(--muted)]">
+              {urgentCount} urgent {urgentCount === 1 ? 'task requires' : 'tasks require'} immediate execution or managerial unblocking.
+            </div>
+          </div>
+        </div>
+      )}
+      {avgGoalProgress >= 70 && (
+        <div className="mb-6 p-4 border border-[var(--good)] bg-[var(--panel)] text-[var(--ink)] flex items-center justify-between">
+          <div>
+            <div className="font-serif-display font-bold text-[16px] text-[var(--good)]">Strong Velocity Pace</div>
+            <div className="font-serif-body italic text-[13px] text-[var(--muted)]">
+              Company OKR progress is at {avgGoalProgress}% — team execution is well ahead of quarterly milestone targets.
+            </div>
+          </div>
+        </div>
+      )}
+
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[36px] gap-y-[22px] mb-[36px]">
         <div className="p-[4px_0_14px] border-b border-[var(--rule)]">
           <div className="font-mono-custom text-[11px] leading-[1.4] text-[var(--muted)] tracking-[0.18em] mb-1.5">

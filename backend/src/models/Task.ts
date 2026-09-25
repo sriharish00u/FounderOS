@@ -102,6 +102,12 @@ const TaskSchema: Schema = new Schema(
   { timestamps: true }
 );
 
+TaskSchema.index({ companyCode: 1, status: 1 });
+TaskSchema.index({ companyCode: 1, assigneeId: 1, status: 1 });
+TaskSchema.index({ companyCode: 1, createdAt: -1 });
+TaskSchema.index({ companyCode: 1, goalId: 1 });
+TaskSchema.index({ companyCode: 1, department: 1 });
+
 TaskSchema.plugin(tenancyPlugin);
 
 export const Task = mongoose.model<ITask>('Task', TaskSchema);

@@ -1,6 +1,9 @@
 import { Router, Request, Response } from 'express';
 import { Department } from '../models/Department';
 import { Role } from '../models/Role';
+import { Employee } from '../models/Employee';
+import { AIEmployee } from '../models/AIEmployee';
+import { Task } from '../models/Task';
 import { Activity } from '../models/Activity';
 import { requireAuth, type AuthUser } from './authRoutes';
 
@@ -110,6 +113,89 @@ router.post('/roles', requireAuth, async (req: Request, res: Response) => {
     res.status(201).json(role);
   } catch (error) {
     res.status(500).json({ error: 'Failed to create role' });
+  }
+});
+
+router.delete('/departments/:id', requireAuth, async (req: Request, res: Response) => {
+  try {
+    const user = (req as Request & { user?: AuthUser }).user;
+    if (!canManageStructure(user)) {
+      return res.status(403).json({ error: 'Only founders and managers can delete departments' });
+    }
+    const companyCode = user?.companyCode ?? 'FO-2026-7X4K';
+    const { id } = req.params;
+
+    const dept = await Department.findOne({ _id: id, companyCode });
+    if (!dept) {
+      return res.status(404).json({ error: 'Department not found' });
+    }
+
+    const humanCount = await Employee.countDocuments({ companyCode, department: dept.name });
+    const aiCount = await AIEmployee.countDocuments({ companyCode, department: dept.name });
+    const openTasks = await Task.countDocuments({ companyCode, department: dept.name, status: { $nin: ['COMPLETED', 'CANCELLED'] } });
+
+    if (humanCount > 0 || aiCount > 0 || openTasks > 0) {
+      return res.status(409).json({
+        error: `Cannot delete department "${dept.name}". Active associations: ${humanCount} employees, ${aiCount} AI agents, ${openTasks} open tasks.`
+      });
+    }
+
+    await Department.deleteOne({ _id: id, companyCode });
+
+    await Activity.create({
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      companyCode,
+      actorName: user?.name ?? 'Founder',
+      actorType: 'founder',
+      action: 'deleted department',
+      target: dept.name,
+      category: 'system'
+    });
+
+    res.json({ message: 'Department deleted successfully', id });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to delete department' });
+  }
+});
+
+router.delete('/roles/:id', requireAuth, async (req: Request, res: Response) => {
+  try {
+    const user = (req as Request & { user?: AuthUser }).user;
+    if (!canManageStructure(user)) {
+      return res.status(403).json({ error: 'Only founders and managers can delete roles' });
+    }
+    const companyCode = user?.companyCode ?? 'FO-2026-7X4K';
+    const { id } = req.params;
+
+    const role = await Role.findOne({ _id: id, companyCode });
+    if (!role) {
+      return res.status(404).json({ error: 'Role not found' });
+    }
+
+    const humanCount = await Employee.countDocuments({ companyCode, role: role.name });
+    const aiCount = await AIEmployee.countDocuments({ companyCode, role: role.name });
+
+    if (humanCount > 0 || aiCount > 0) {
+      return res.status(409).json({
+        error: `Cannot delete role "${role.name}". Active associations: ${humanCount} employees, ${aiCount} AI agents.`
+      });
+    }
+
+    await Role.deleteOne({ _id: id, companyCode });
+
+    await Activity.create({
+      timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      companyCode,
+      actorName: user?.name ?? 'Founder',
+      actorType: 'founder',
+      action: 'deleted role',
+      target: role.name,
+      category: 'system'
+    });
+
+    res.json({ message: 'Role deleted successfully', id });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to delete role' });
   }
 });
 

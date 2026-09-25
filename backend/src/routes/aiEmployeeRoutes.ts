@@ -1,8 +1,10 @@
 import { Router, Request, Response } from 'express';
 import { AIEmployee } from '../models/AIEmployee';
+import { Task } from '../models/Task';
 import { Activity } from '../models/Activity';
 import { encryptSecret } from '../utils/crypto';
 import { requireAuth, type AuthUser } from './authRoutes';
+import { executeTaskForAI } from '../services/aiExecutionService';
 
 const router = Router();
 
@@ -187,6 +189,33 @@ router.put('/:id/memory', requireAuth, async (req: Request, res: Response) => {
     res.json(toDTO(ai));
   } catch (error) {
     res.status(500).json({ error: 'Failed to update AI memory' });
+  }
+});
+
+router.post('/:id/execute/:taskId', requireAuth, async (req: Request, res: Response) => {
+  try {
+    const user = (req as Request & { user?: AuthUser }).user;
+    const companyCode = user?.companyCode ?? 'FO-2026-7X4K';
+    const id = String(req.params.id);
+    const taskId = String(req.params.taskId);
+
+    const ai = await AIEmployee.findOne({ _id: id, companyCode });
+    if (!ai) {
+      return res.status(404).json({ error: 'AI Employee not found' });
+    }
+
+    const task = await Task.findOne({ _id: taskId, companyCode });
+    if (!task) {
+      return res.status(404).json({ error: 'Task not found' });
+    }
+
+    setImmediate(() => {
+      executeTaskForAI(taskId, companyCode);
+    });
+
+    res.json({ message: `Autonomous execution initiated for ${ai.name} on task "${task.title}"`, taskId });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to initiate AI execution' });
   }
 });
 

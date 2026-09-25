@@ -99,6 +99,9 @@ const AIEmployeeSchema: Schema = new Schema(
   { timestamps: true }
 );
 
+AIEmployeeSchema.index({ companyCode: 1, status: 1 });
+AIEmployeeSchema.index({ companyCode: 1, department: 1 });
+
 AIEmployeeSchema.plugin(tenancyPlugin);
 
 export const AIEmployee = mongoose.model<IAIEmployee>('AIEmployee', AIEmployeeSchema);

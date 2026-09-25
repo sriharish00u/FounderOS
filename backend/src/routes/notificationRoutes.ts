@@ -15,6 +15,31 @@ router.get('/', requireAuth, async (req: Request, res: Response) => {
   }
 });
 
+router.get('/stream', requireAuth, (req: Request, res: Response) => {
+  const user = (req as Request & { user?: AuthUser }).user;
+  const companyCode = user?.companyCode ?? 'FO-2026-7X4K';
+
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.flushHeaders();
+
+  res.write(`data: ${JSON.stringify({ type: 'connected', timestamp: new Date().toISOString() })}\n\n`);
+
+  const interval = setInterval(async () => {
+    try {
+      const unreadCount = await Notification.countDocuments({ companyCode, read: false });
+      res.write(`data: ${JSON.stringify({ type: 'heartbeat', unreadCount, timestamp: new Date().toISOString() })}\n\n`);
+    } catch {
+      // ignore
+    }
+  }, 15000);
+
+  req.on('close', () => {
+    clearInterval(interval);
+  });
+});
+
 router.patch('/:id/read', requireAuth, async (req: Request, res: Response) => {
   try {
     const user = (req as Request & { user?: AuthUser }).user;

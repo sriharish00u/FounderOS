@@ -15,6 +15,10 @@ import activityRoutes from './routes/activityRoutes';
 import notificationRoutes from './routes/notificationRoutes';
 import reportRoutes from './routes/reportRoutes';
 import authRoutes from './routes/authRoutes';
+import crmRoutes from './routes/crmRoutes';
+import financeRoutes from './routes/financeRoutes';
+import decisionRoutes from './routes/decisionRoutes';
+import executiveRoutes from './routes/executiveRoutes';
 
 dotenv.config();
 
@@ -60,6 +64,10 @@ app.use('/api', structureRoutes);
 app.use('/api/activities', activityRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/crm', crmRoutes);
+app.use('/api/finance', financeRoutes);
+app.use('/api/decisions', decisionRoutes);
+app.use('/api/executive', executiveRoutes);
 
 const startServer = async () => {
   try {

@@ -9,6 +9,9 @@ import { Goal } from './models/Goal';
 import { Activity } from './models/Activity';
 import { Notification } from './models/Notification';
 import { User } from './models/User';
+import { Deal } from './models/Deal';
+import { FinanceTransaction } from './models/FinanceTransaction';
+import { Decision } from './models/Decision';
 import bcrypt from 'bcryptjs';
 
 const upsertBy = async (model: mongoose.Model<any>, key: string, docs: any[]): Promise<void> => {
@@ -26,7 +29,19 @@ const upsertBy = async (model: mongoose.Model<any>, key: string, docs: any[]): P
 };
 
 const backfillCompanyCode = async (code: string): Promise<void> => {
-  const tenantModels = [Employee, AIEmployee, Task, Goal, Department, Role, Activity, Notification];
+  const tenantModels = [
+    Employee,
+    AIEmployee,
+    Task,
+    Goal,
+    Department,
+    Role,
+    Activity,
+    Notification,
+    Deal,
+    FinanceTransaction,
+    Decision,
+  ];
   for (const model of tenantModels) {
     const res = await (model as any).updateMany({ companyCode: { $exists: false } }, { $set: { companyCode: code } }).setOptions({ bypassTenancy: true });
     if (res.modifiedCount > 0) {
@@ -585,6 +600,141 @@ export const seedDatabaseIfEmpty = async (): Promise<void> => {
       type: 'milestone',
       read: false
     }
+  ]);
+
+  await insertIfEmpty(Deal, [
+    {
+      title: 'Enterprise Operating System Deployment',
+      clientName: 'Apex Retail Group',
+      contactEmail: 'cto@apexretail.io',
+      value: 45000,
+      stage: 'PROPOSAL',
+      probability: 70,
+      ownerName: 'Sri Harish',
+      notes: 'Custom AI agent fleet with dedicated VPC endpoint.',
+      lastContactDate: '2026-09-22',
+      followUpRequired: true,
+      aiRecommendation: 'Deal stalled in Proposal for 4 days. Send follow-up draft.',
+    },
+    {
+      title: 'Cloud Infrastructure Management Suite',
+      clientName: 'FinVortex Global',
+      contactEmail: 'engineering@finvortex.com',
+      value: 28000,
+      stage: 'NEGOTIATION',
+      probability: 85,
+      ownerName: 'Sri Harish',
+      notes: 'Finalizing security compliance documentation.',
+      lastContactDate: '2026-09-25',
+      followUpRequired: false,
+      aiRecommendation: 'Schedule final security review to unblock close date.',
+    },
+    {
+      title: 'Autonomous Marketing Agents Pilot',
+      clientName: 'HyperScale Media',
+      contactEmail: 'growth@hyperscalemedia.com',
+      value: 12000,
+      stage: 'QUALIFIED',
+      probability: 60,
+      ownerName: 'Priya Sharma',
+      notes: 'Demonstrated Nova ad copy generator.',
+      lastContactDate: '2026-09-24',
+      followUpRequired: false,
+      aiRecommendation: 'Send tailored case study on multi-angle conversion lifts.',
+    },
+    {
+      title: 'V1 Enterprise Platform Annual License',
+      clientName: 'Zenith Logistics',
+      contactEmail: 'ops@zenithlog.com',
+      value: 36000,
+      stage: 'WON',
+      probability: 100,
+      ownerName: 'Sri Harish',
+      notes: 'Contract signed for 12 months.',
+      lastContactDate: '2026-09-20',
+      followUpRequired: false,
+      aiRecommendation: 'Initiate customer onboarding wizard for admin account.',
+    },
+  ]);
+
+  await insertIfEmpty(FinanceTransaction, [
+    {
+      title: 'Zenith Logistics Annual Subscription',
+      type: 'income',
+      amount: 36000,
+      category: 'Subscription / MRR',
+      date: '2026-09-20',
+      status: 'cleared',
+      account: 'Primary Operating (HDFC)',
+      notes: 'Annual upfront license.',
+    },
+    {
+      title: 'Monthly Recurring Platform Subscriptions',
+      type: 'income',
+      amount: 14200,
+      category: 'Subscription / MRR',
+      date: '2026-09-01',
+      status: 'cleared',
+      account: 'Primary Operating (HDFC)',
+      notes: 'Standard Tier users.',
+    },
+    {
+      title: 'Engineering & AI Workforce Payroll',
+      type: 'expense',
+      amount: 8500,
+      category: 'Payroll',
+      date: '2026-09-01',
+      status: 'cleared',
+      account: 'Primary Operating (HDFC)',
+      notes: 'Core development staff salaries.',
+    },
+    {
+      title: 'Anthropic & OpenAI API Compute',
+      type: 'expense',
+      amount: 2400,
+      category: 'AI APIs',
+      date: '2026-09-15',
+      status: 'cleared',
+      account: 'Corporate Credit Card',
+      notes: 'Model token usage for autonomous workers.',
+    },
+    {
+      title: 'AWS & Cloud Infrastructure Hosting',
+      type: 'expense',
+      amount: 1800,
+      category: 'Cloud & Compute',
+      date: '2026-09-10',
+      status: 'cleared',
+      account: 'Corporate Credit Card',
+      notes: 'Atlas cluster, VPC instances, Redis.',
+    },
+  ]);
+
+  await insertIfEmpty(Decision, [
+    {
+      title: 'Adopt Multi-Model AI Routing Architecture',
+      category: 'Architecture',
+      context: 'Reliance on a single AI provider posed uptime risks and rate limit bottlenecks.',
+      decision: 'Standardize on dynamic model discovery with local fallback models (PORT 20128).',
+      rationale: 'Decreases single-point failure risks and reduces inference costs by 35%.',
+      impact: 'Zero downtime during external provider outages.',
+      stakeholders: ['Sri Harish', 'Vikram Mehta'],
+      date: '2026-09-18',
+      status: 'active',
+      ownerName: 'Sri Harish',
+    },
+    {
+      title: 'Target B2B Tech Founders as Beachhead ICP',
+      category: 'Strategy',
+      context: 'Initial marketing was split broadly across SMBs and freelance agencies.',
+      decision: 'Focus 100% of GTM on early-stage AI/tech founders scaling 5-20 person teams.',
+      rationale: 'Highest willingness to pay and highest adoption rate of autonomous AI employees.',
+      impact: 'CAC decreased by 40%, sales cycle reduced to 11 days.',
+      stakeholders: ['Sri Harish', 'Priya Sharma'],
+      date: '2026-09-10',
+      status: 'active',
+      ownerName: 'Sri Harish',
+    },
   ]);
 
   await backfillCompanyCode(companyCode);

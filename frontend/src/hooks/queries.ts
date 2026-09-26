@@ -1,6 +1,14 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { api } from '../services/api';
-import type { Task, Goal, TaskStatus } from '../types';
+import type {
+  Task,
+  Goal,
+  TaskStatus,
+  Deal,
+  DealStage,
+  FinanceTransaction,
+  Decision,
+} from '../types';
 
 export const queryKeys = {
   company: ['company'] as const,
@@ -12,6 +20,11 @@ export const queryKeys = {
   notifications: ['notifications'] as const,
   departments: ['departments'] as const,
   roles: ['roles'] as const,
+  crm: ['crm'] as const,
+  financeSummary: ['financeSummary'] as const,
+  financeTransactions: ['financeTransactions'] as const,
+  decisions: ['decisions'] as const,
+  executiveBriefing: ['executiveBriefing'] as const,
 };
 
 export function useCompanyQuery() {
@@ -189,6 +202,111 @@ export function useCreateGoalMutation() {
     onSettled: () => {
       queryClient.invalidateQueries({ queryKey: queryKeys.goals });
       queryClient.invalidateQueries({ queryKey: queryKeys.activities });
+      queryClient.invalidateQueries({ queryKey: queryKeys.executiveBriefing });
     },
+  });
+}
+
+// Pillar 1: CRM Hooks
+export function useCRMQuery() {
+  return useQuery({
+    queryKey: queryKeys.crm,
+    queryFn: () => api.getCRM(),
+    staleTime: 1000 * 20,
+  });
+}
+
+export function useCreateDealMutation() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: (data: Omit<Deal, 'id' | 'createdAt' | 'updatedAt'>) => api.createDeal(data),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: queryKeys.crm });
+      queryClient.invalidateQueries({ queryKey: queryKeys.activities });
+      queryClient.invalidateQueries({ queryKey: queryKeys.executiveBriefing });
+    },
+  });
+}
+
+export function useUpdateDealStageMutation() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: ({ id, stage }: { id: string; stage: DealStage }) => api.updateDealStage(id, stage),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: queryKeys.crm });
+      queryClient.invalidateQueries({ queryKey: queryKeys.activities });
+      queryClient.invalidateQueries({ queryKey: queryKeys.executiveBriefing });
+    },
+  });
+}
+
+export function useGenerateDealOutreachMutation() {
+  return useMutation({
+    mutationFn: (id: string) => api.generateDealOutreach(id),
+  });
+}
+
+// Pillar 2: Finance Hooks
+export function useFinanceSummaryQuery() {
+  return useQuery({
+    queryKey: queryKeys.financeSummary,
+    queryFn: () => api.getFinanceSummary(),
+    staleTime: 1000 * 30,
+  });
+}
+
+export function useFinanceTransactionsQuery() {
+  return useQuery({
+    queryKey: queryKeys.financeTransactions,
+    queryFn: () => api.getFinanceTransactions(),
+    staleTime: 1000 * 30,
+  });
+}
+
+export function useCreateFinanceTransactionMutation() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: (data: Omit<FinanceTransaction, 'id'>) => api.createFinanceTransaction(data),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: queryKeys.financeSummary });
+      queryClient.invalidateQueries({ queryKey: queryKeys.financeTransactions });
+      queryClient.invalidateQueries({ queryKey: queryKeys.activities });
+      queryClient.invalidateQueries({ queryKey: queryKeys.executiveBriefing });
+    },
+  });
+}
+
+// Pillar 3: Decisions Hooks
+export function useDecisionsQuery() {
+  return useQuery({
+    queryKey: queryKeys.decisions,
+    queryFn: () => api.getDecisions(),
+    staleTime: 1000 * 60,
+  });
+}
+
+export function useCreateDecisionMutation() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: (data: Omit<Decision, 'id'>) => api.createDecision(data),
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: queryKeys.decisions });
+      queryClient.invalidateQueries({ queryKey: queryKeys.activities });
+      queryClient.invalidateQueries({ queryKey: queryKeys.executiveBriefing });
+    },
+  });
+}
+
+// Pillar 4: Executive Briefing Hook
+export function useExecutiveBriefingQuery() {
+  return useQuery({
+    queryKey: queryKeys.executiveBriefing,
+    queryFn: () => api.getExecutiveBriefing(),
+    staleTime: 1000 * 20,
+    refetchInterval: 20000,
   });
 }

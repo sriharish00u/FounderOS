@@ -81,7 +81,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = false, onClose }) => 
 
           <div>
             <h4 className="font-mono-custom text-[11px] text-[var(--muted)] tracking-[0.18em] m-0 mb-2.5">
-              Today
+              Command Hub
             </h4>
             <ul className="list-none p-0 m-0 mb-3.5 flex flex-col gap-1">
               <li
@@ -94,30 +94,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = false, onClose }) => 
               >
                 <span className="flex items-center">
                   {activeView === 'dashboard' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
-                  Command Center
+                  Executive Center
                 </span>
-                <span className="font-mono-custom text-[10px] text-[var(--muted)]">{scopedTasks.length}</span>
-              </li>
-
-              <li
-                onClick={() => handleSelectView('tasks')}
-                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
-                  activeView === 'tasks' 
-                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
-                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
-                }`}
-              >
-                <span className="flex items-center">
-                  {activeView === 'tasks' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
-                  Tasks &amp; Pipeline
-                </span>
-                {pendingReviewsCount > 0 ? (
-                  <span className="bg-[var(--accent)] text-[var(--paper)] font-mono-custom text-[10px] px-1.5 py-0.5 rounded-full">
-                    {pendingReviewsCount} rev
-                  </span>
-                ) : (
-                  <span className="font-mono-custom text-[11px] text-[var(--muted)]">{scopedTasks.length}</span>
-                )}
+                <span className="font-mono-custom text-[10px] text-[var(--muted)]">Pulse</span>
               </li>
 
               <li
@@ -130,7 +109,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = false, onClose }) => 
               >
                 <span className="flex items-center">
                   {activeView === 'todos' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
-                  My Todos
+                  My Priority Queue
                 </span>
                 <span className="bg-[var(--ink)] text-[var(--paper)] font-mono-custom text-[10px] px-1.5 py-0.5 rounded-full">
                   {myTodoCount}
@@ -141,9 +120,80 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = false, onClose }) => 
 
           <div>
             <h4 className="font-mono-custom text-[11px] text-[var(--muted)] tracking-[0.18em] m-0 mb-2.5">
-              Organization
+              5 Executive Pillars
             </h4>
             <ul className="list-none p-0 m-0 mb-3.5 flex flex-col gap-1">
+              {/* Pillar 1: CRM */}
+              <li
+                onClick={() => handleSelectView('crm')}
+                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
+                  activeView === 'crm' 
+                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
+                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
+                }`}
+              >
+                <span className="flex items-center">
+                  {activeView === 'crm' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
+                  CRM &amp; Deals
+                </span>
+                <span className="font-mono-custom text-[10px] text-[var(--muted)]">Leads</span>
+              </li>
+
+              {/* Pillar 2: Projects */}
+              <li
+                onClick={() => handleSelectView('tasks')}
+                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
+                  activeView === 'tasks' 
+                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
+                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
+                }`}
+              >
+                <span className="flex items-center">
+                  {activeView === 'tasks' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
+                  Projects &amp; Tasks
+                </span>
+                {pendingReviewsCount > 0 ? (
+                  <span className="bg-[var(--accent)] text-[var(--paper)] font-mono-custom text-[10px] px-1.5 py-0.5 rounded-full">
+                    {pendingReviewsCount} rev
+                  </span>
+                ) : (
+                  <span className="font-mono-custom text-[11px] text-[var(--muted)]">{scopedTasks.length}</span>
+                )}
+              </li>
+
+              {/* Pillar 3: Finance */}
+              <li
+                onClick={() => handleSelectView('finance')}
+                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
+                  activeView === 'finance' 
+                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
+                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
+                }`}
+              >
+                <span className="flex items-center">
+                  {activeView === 'finance' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
+                  Finance &amp; Runway
+                </span>
+                <span className="font-mono-custom text-[10px] text-[var(--good)]">Cash</span>
+              </li>
+
+              {/* Pillar 4: Strategy */}
+              <li
+                onClick={() => handleSelectView('strategy')}
+                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
+                  activeView === 'strategy' || activeView === 'goals'
+                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
+                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
+                }`}
+              >
+                <span className="flex items-center">
+                  {(activeView === 'strategy' || activeView === 'goals') && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
+                  Strategy &amp; Decisions
+                </span>
+                <span className="font-mono-custom text-[11px] text-[var(--good)]">{avgGoalProgress}%</span>
+              </li>
+
+              {/* Pillar 5: Team */}
               <li
                 onClick={() => handleSelectView('people')}
                 className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
@@ -154,31 +204,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = false, onClose }) => 
               >
                 <span className="flex items-center">
                   {activeView === 'people' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
-                  People &amp; Roles
+                  Team &amp; AI Fleet
                 </span>
-                <span className="font-mono-custom text-[11px] text-[var(--muted)]">{isEmployee ? `${scopedStaff.length} teammate${scopedStaff.length === 1 ? '' : 's'}` : `${humanEmployees.length} staff`}</span>
-              </li>
-
-              <li
-                onClick={() => handleSelectView('goals')}
-                className={`flex justify-between items-center px-2 py-1.5 rounded-sm font-serif-body text-[15.5px] leading-tight cursor-pointer transition ${
-                  activeView === 'goals' 
-                    ? 'bg-[rgba(193,74,43,0.10)] text-[var(--accent)] font-semibold' 
-                    : 'text-[var(--ink)] hover:bg-[var(--panel)]'
-                }`}
-              >
-                <span className="flex items-center">
-                  {activeView === 'goals' && <span className="text-[var(--accent)] mr-1.5 text-[9px]">●</span>}
-                  Strategic OKRs
-                </span>
-                <span className="font-mono-custom text-[11px] text-[var(--good)]">{avgGoalProgress}%</span>
+                <span className="font-mono-custom text-[11px] text-[var(--muted)]">{isEmployee ? `${scopedStaff.length} team` : `${humanEmployees.length} staff`}</span>
               </li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-mono-custom text-[11px] text-[var(--muted)] tracking-[0.18em] m-0 mb-2.5">
-              Archive &amp; Audit
+              Governance &amp; Audit
             </h4>
             <ul className="list-none p-0 m-0 mb-3.5 flex flex-col gap-1">
               <li

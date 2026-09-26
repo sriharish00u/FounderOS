@@ -7,10 +7,17 @@ import type {
   Task, 
   Goal, 
   ActivityItem, 
-  NotificationItem,
-  TaskStatus,
-  AuthSession,
-  OnboardingPayload
+  NotificationItem, 
+  TaskStatus, 
+  AuthSession, 
+  OnboardingPayload,
+  Deal,
+  CRMResponse,
+  DealStage,
+  FinanceTransaction,
+  FinancialSummary,
+  Decision,
+  ExecutiveBriefing
 } from '../types';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
@@ -206,4 +213,45 @@ export const api = {
     request<NotificationItem>(`/notifications/${notifId}/read`, {
       method: 'PATCH',
     }),
+
+  // Pillar 1: CRM
+  getCRM: () => request<CRMResponse>('/crm'),
+  createDeal: (data: Omit<Deal, 'id' | 'createdAt' | 'updatedAt'>) =>
+    request<Deal>('/crm', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+  updateDealStage: (id: string, stage: DealStage) =>
+    request<Deal>(`/crm/${id}/stage`, {
+      method: 'PATCH',
+      body: JSON.stringify({ stage }),
+    }),
+  generateDealOutreach: (id: string) =>
+    request<{ subject: string; draft: string; deal: Deal }>(`/crm/${id}/generate-outreach`, {
+      method: 'POST',
+    }),
+
+  // Pillar 2: Finance
+  getFinanceSummary: () => request<FinancialSummary>('/finance/summary'),
+  getFinanceTransactions: () => request<FinanceTransaction[]>('/finance/transactions'),
+  createFinanceTransaction: (data: Omit<FinanceTransaction, 'id'>) =>
+    request<FinanceTransaction>('/finance/transactions', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+  deleteFinanceTransaction: (id: string) =>
+    request<{ message: string; id: string }>(`/finance/transactions/${id}`, {
+      method: 'DELETE',
+    }),
+
+  // Pillar 3: Decisions
+  getDecisions: () => request<Decision[]>('/decisions'),
+  createDecision: (data: Omit<Decision, 'id'>) =>
+    request<Decision>('/decisions', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+
+  // Pillar 4: Executive Briefing
+  getExecutiveBriefing: () => request<ExecutiveBriefing>('/executive/briefing'),
 };

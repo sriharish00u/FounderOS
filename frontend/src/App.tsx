@@ -12,7 +12,9 @@ import { CompanyDashboard } from './components/dashboard/CompanyDashboard';
 import { EmployeeDashboard } from './components/dashboard/EmployeeDashboard';
 import { EmployeeTodosView } from './components/dashboard/EmployeeTodosView';
 import { TasksView } from './components/tasks/TasksView';
-import { GoalsView } from './components/goals/GoalsView';
+import { StrategyView } from './components/strategy/StrategyView';
+import { CRMView } from './components/crm/CRMView';
+import { FinanceView } from './components/finance/FinanceView';
 import { PeopleView } from './components/people/PeopleView';
 import { ReportsView } from './components/reports/ReportsView';
 import { SettingsView } from './components/settings/SettingsView';
@@ -22,10 +24,10 @@ import { HireAIModal } from './components/ai/HireAIModal';
 import { AIMemoryModal } from './components/ai/AIMemoryModal';
 
 const ROLE_VIEWS: Record<UserRole, ActiveView[]> = {
-  founder: ['dashboard', 'tasks', 'todos', 'goals', 'people', 'reports', 'settings'],
-  co_founder: ['dashboard', 'tasks', 'todos', 'goals', 'people', 'reports', 'settings'],
-  manager: ['dashboard', 'tasks', 'todos', 'goals', 'people', 'reports'],
-  employee: ['dashboard', 'tasks', 'todos', 'goals', 'people', 'reports', 'settings'],
+  founder: ['dashboard', 'crm', 'tasks', 'todos', 'finance', 'strategy', 'goals', 'people', 'reports', 'settings'],
+  co_founder: ['dashboard', 'crm', 'tasks', 'todos', 'finance', 'strategy', 'goals', 'people', 'reports', 'settings'],
+  manager: ['dashboard', 'crm', 'tasks', 'todos', 'finance', 'strategy', 'goals', 'people', 'reports'],
+  employee: ['dashboard', 'tasks', 'todos', 'strategy', 'goals', 'people', 'reports', 'settings'],
   ai: ['todos']
 };
 
@@ -44,9 +46,11 @@ const MainLayout: React.FC = () => {
         <Sidebar isOpen={isMobileSidebarOpen} onClose={() => setIsMobileSidebarOpen(false)} />
         <main className="flex-1 overflow-y-auto bg-[var(--paper)] min-w-0">
           {view === 'dashboard' && (role === 'employee' ? <EmployeeDashboard /> : <CompanyDashboard />)}
+          {view === 'crm' && <CRMView />}
           {view === 'tasks' && <TasksView />}
           {view === 'todos' && <EmployeeTodosView />}
-          {view === 'goals' && <GoalsView />}
+          {view === 'finance' && <FinanceView />}
+          {(view === 'strategy' || view === 'goals') && <StrategyView />}
           {view === 'people' && <PeopleView />}
           {view === 'reports' && <ReportsView />}
           {view === 'settings' && <SettingsView />}

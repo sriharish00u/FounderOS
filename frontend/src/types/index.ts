@@ -248,3 +248,113 @@ export interface CompanyDetails {
     phone: string;
   }[];
 }
+
+export type DealStage = 'LEAD' | 'QUALIFIED' | 'PROPOSAL' | 'NEGOTIATION' | 'WON' | 'LOST';
+
+export interface Deal {
+  id: string;
+  title: string;
+  clientName: string;
+  contactEmail: string;
+  value: number;
+  stage: DealStage;
+  probability: number;
+  ownerName: string;
+  notes?: string;
+  lastContactDate: string;
+  followUpRequired: boolean;
+  aiRecommendation?: string;
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+export interface CRMResponse {
+  deals: Deal[];
+  metrics: {
+    totalDeals: number;
+    openDealsCount: number;
+    pipelineValue: number;
+    wonValue: number;
+  };
+}
+
+export type TransactionType = 'income' | 'expense';
+
+export type TransactionCategory =
+  | 'Subscription / MRR'
+  | 'Services / Deals'
+  | 'Payroll'
+  | 'Cloud & Compute'
+  | 'AI APIs'
+  | 'Marketing'
+  | 'Operations'
+  | 'Other';
+
+export interface FinanceTransaction {
+  id: string;
+  title: string;
+  type: TransactionType;
+  amount: number;
+  category: TransactionCategory;
+  date: string;
+  status: 'cleared' | 'pending';
+  account?: string;
+  notes?: string;
+}
+
+export interface FinancialSummary {
+  cashBalance: number;
+  monthlyBurn: number;
+  monthlyMRR: number;
+  netMonthlyBurn: number;
+  runwayMonths: number;
+  totalIncome: number;
+  totalExpense: number;
+  categoryBreakdown: Record<string, number>;
+  transactionCount: number;
+}
+
+export type DecisionCategory = 'Strategy' | 'Product' | 'Hiring' | 'Finance' | 'Architecture';
+
+export interface Decision {
+  id: string;
+  title: string;
+  category: DecisionCategory;
+  context: string;
+  decision: string;
+  rationale: string;
+  impact?: string;
+  stakeholders: string[];
+  date: string;
+  status: 'active' | 'superseded' | 'under_review';
+  ownerName: string;
+}
+
+export interface ExecutiveBriefing {
+  date: string;
+  criticalAttentions: {
+    id: string;
+    level: 'critical' | 'warning' | 'info';
+    title: string;
+    message: string;
+    actionLabel?: string;
+    actionType?: string;
+    targetId?: string;
+  }[];
+  topPriorities: {
+    id: string;
+    rank: number;
+    title: string;
+    context: string;
+    category: 'CRM' | 'Finance' | 'Project' | 'Team' | 'Strategy';
+    actionLabel: string;
+    targetView: string;
+  }[];
+  pillarHealth: {
+    crm: { pipelineValue: number; openDeals: number; stalledDeals: number };
+    finance: { cashBalance: number; monthlyBurn: number; runwayMonths: number };
+    projects: { totalTasks: number; inReview: number; urgentCount: number };
+    team: { humans: number; aiAgents: number; runningNow: number };
+    strategy: { avgGoalProgress: number; totalGoals: number };
+  };
+}

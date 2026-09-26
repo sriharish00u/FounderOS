@@ -16,8 +16,11 @@ import type {
 
 export type ActiveView = 
   | 'dashboard'
+  | 'crm'
   | 'tasks'
   | 'todos'
+  | 'finance'
+  | 'strategy'
   | 'goals'
   | 'people'
   | 'reports'
@@ -64,6 +67,12 @@ export interface AppContextType {
   
   isCreateTaskModalOpen: boolean;
   setIsCreateTaskModalOpen: (open: boolean) => void;
+  isCreateGoalModalOpen: boolean;
+  setIsCreateGoalModalOpen: (open: boolean) => void;
+  isTaskDetailModalOpen: boolean;
+  setIsTaskDetailModalOpen: (open: boolean) => void;
+  selectedTaskId: string | null;
+  setSelectedTaskId: (id: string | null) => void;
   isMemoryModalOpen: boolean;
   setIsMemoryModalOpen: (open: boolean) => void;
   

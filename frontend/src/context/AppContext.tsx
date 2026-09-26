@@ -81,6 +81,9 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [isHireModalOpen, setIsHireModalOpen] = useState<boolean>(false);
   const [hireModalTab, setHireModalTab] = useState<'human' | 'ai'>('human');
   const [isCreateTaskModalOpen, setIsCreateTaskModalOpen] = useState<boolean>(false);
+  const [isCreateGoalModalOpen, setIsCreateGoalModalOpen] = useState<boolean>(false);
+  const [isTaskDetailModalOpen, setIsTaskDetailModalOpen] = useState<boolean>(false);
+  const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
   const [isMemoryModalOpen, setIsMemoryModalOpen] = useState<boolean>(false);
 
   const fetchRemoteData = async () => {
@@ -392,6 +395,12 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         setHireModalTab,
         isCreateTaskModalOpen,
         setIsCreateTaskModalOpen,
+        isCreateGoalModalOpen,
+        setIsCreateGoalModalOpen,
+        isTaskDetailModalOpen,
+        setIsTaskDetailModalOpen,
+        selectedTaskId,
+        setSelectedTaskId,
         isMemoryModalOpen,
         setIsMemoryModalOpen,
         createTask,

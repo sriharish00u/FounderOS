@@ -42,27 +42,47 @@ const normalizeIds = (value: unknown): unknown => {
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const token = getStoredToken();
-  const res = await fetch(`${API_BASE}${endpoint}`, {
-    headers: {
-      'Content-Type': 'application/json',
-      ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      ...(options?.headers || {}),
-    },
-    ...options,
-  });
+  const maxRetries = (!options?.method || options.method === 'GET') ? 2 : 0;
+  let attempt = 0;
 
-  if (!res.ok) {
-    let message = `HTTP ${res.status}`;
+  while (true) {
     try {
-      const err = await res.json();
-      if (err?.error) message = err.error;
-    } catch {
-      // Ignore parse failures
-    }
-    throw new Error(message);
-  }
+      const res = await fetch(`${API_BASE}${endpoint}`, {
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          ...(options?.headers || {}),
+        },
+        ...options,
+      });
 
-  return normalizeIds(await res.json()) as T;
+      if (!res.ok) {
+        if ([502, 503, 504].includes(res.status) && attempt < maxRetries) {
+          attempt++;
+          await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+          continue;
+        }
+
+        let message = `HTTP ${res.status}`;
+        try {
+          const err = await res.json();
+          if (err?.error) message = err.error;
+        } catch {
+          // Ignore parse failures
+        }
+        throw new Error(message);
+      }
+
+      return normalizeIds(await res.json()) as T;
+    } catch (err) {
+      if (attempt < maxRetries) {
+        attempt++;
+        await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+        continue;
+      }
+      throw err;
+    }
+  }
 }
 
 export const api = {

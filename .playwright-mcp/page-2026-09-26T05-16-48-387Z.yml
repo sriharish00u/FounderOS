@@ -1,0 +1,45 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ◆
+      - text: Founder Os
+    - generic [ref=e7]:
+      - generic [ref=e8]: One company · One code · One ledger
+      - button "Sign In →" [ref=e9]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - paragraph [ref=e12]: The Operating System For Your Company
+      - heading "Founder OS" [level=1] [ref=e13]
+      - paragraph [ref=e14]: "Build your company with people and AI employees working from a single shared operating rhythm: hire them, brief them, and watch the work land."
+      - generic [ref=e15]:
+        - button "Register Your Company" [ref=e16]
+        - button "Sign In" [ref=e17]
+      - paragraph [ref=e18]: Setup takes under two minutes
+    - generic [ref=e20]:
+      - article [ref=e21]:
+        - paragraph [ref=e22]: "01"
+        - heading "Human Hiring" [level=2] [ref=e23]
+        - paragraph [ref=e24]: Hire people instantly — each employee signs in with email and their phone as password — under one company code.
+      - article [ref=e25]:
+        - paragraph [ref=e26]: "02"
+        - heading "Ai Workforce" [level=2] [ref=e27]
+        - paragraph [ref=e28]: Hire specialized AI employees that carry their own briefs and handoffs.
+      - article [ref=e29]:
+        - paragraph [ref=e30]: "03"
+        - heading "Operating Rhythm" [level=2] [ref=e31]
+        - paragraph [ref=e32]: Tasks, goals, and reports stay in one ledger your whole company reads.
+    - generic [ref=e34]:
+      - heading "How It Works" [level=2] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]: "1"
+          - paragraph [ref=e39]: Register your company
+        - generic [ref=e40]:
+          - generic [ref=e41]: "2"
+          - paragraph [ref=e42]: Hire people and deploy AI members
+        - generic [ref=e43]:
+          - generic [ref=e44]: "3"
+          - paragraph [ref=e45]: Run the operating system daily
+  - contentinfo [ref=e46]:
+    - generic [ref=e47]: Founder OS
+    - button "Enter The Os →" [ref=e48]

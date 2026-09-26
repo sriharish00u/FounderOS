@@ -31,6 +31,7 @@ const ROLE_VIEWS: Record<UserRole, ActiveView[]> = {
 
 const MainLayout: React.FC = () => {
   const { activeView, auth } = useApp();
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
 
   const role: UserRole = auth.phase === 'authenticated' ? auth.user.role : 'employee';
   const allowed = ROLE_VIEWS[role] ?? ['dashboard'];
@@ -38,9 +39,9 @@ const MainLayout: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[var(--paper)] text-[var(--ink)] flex flex-col font-serif-body selection:bg-[var(--accent)] selection:text-[var(--paper)]">
-      <Header />
+      <Header onToggleMobileMenu={() => setIsMobileSidebarOpen((prev) => !prev)} />
       <div className="flex flex-1 min-h-[calc(100vh-44px)]">
-        <Sidebar />
+        <Sidebar isOpen={isMobileSidebarOpen} onClose={() => setIsMobileSidebarOpen(false)} />
         <main className="flex-1 overflow-y-auto bg-[var(--paper)] min-w-0">
           {view === 'dashboard' && (role === 'employee' ? <EmployeeDashboard /> : <CompanyDashboard />)}
           {view === 'tasks' && <TasksView />}

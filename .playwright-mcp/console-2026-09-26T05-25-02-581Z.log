@@ -1,0 +1,7 @@
+[   20290ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://frontend-one-drab-83.vercel.app/:0
+[  645158ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://frontend-one-drab-83.vercel.app/:0
+[  798173ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://frontend-one-drab-83.vercel.app/:0
+[  938913ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://frontend-one-drab-83.vercel.app/:0
+[  938913ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://frontend-one-drab-83.vercel.app/:0
+[ 1027597ms] [ERROR] Access to fetch at 'https://founderos-backend-mtth.onrender.com/api/tasks' from origin 'https://frontend-one-drab-83.vercel.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://frontend-one-drab-83.vercel.app/:0
+[ 1027597ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://founderos-backend-mtth.onrender.com/api/tasks:0

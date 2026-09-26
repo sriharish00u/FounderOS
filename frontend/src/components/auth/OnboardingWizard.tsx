@@ -17,11 +17,11 @@ export const OnboardingWizard: React.FC = () => {
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState(() => ({
     name: user?.name ?? employee?.name ?? '',
     phone: user?.phone ?? employee?.phone ?? '',
     department: user?.department ?? employee?.department ?? '',
-    role: employee?.role ?? user?.role === 'employee' ? '' : '',
+    role: employee?.role || (user?.role && user?.role !== 'employee' ? user.role : '') || '',
     level: user?.level ?? employee?.level ?? '',
     managerName: user?.department ? '' : employee?.managerName ?? '',
     bio: user?.bio ?? employee?.bio ?? '',
@@ -36,7 +36,21 @@ export const OnboardingWizard: React.FC = () => {
     confirm: '',
     notifications: user?.preferences?.notifications ?? 'weekly',
     workMode: user?.preferences?.workMode ?? 'hybrid',
-  });
+  }));
+
+  React.useEffect(() => {
+    if (employee) {
+      setForm((f) => ({
+        ...f,
+        name: f.name || employee.name || '',
+        phone: f.phone || employee.phone || '',
+        department: f.department || employee.department || '',
+        role: f.role || employee.role || '',
+        level: f.level || employee.level || '',
+        bio: f.bio || employee.bio || '',
+      }));
+    }
+  }, [employee]);
 
   const field = (key: keyof typeof form, value: string) => setForm(f => ({ ...f, [key]: value }));
 

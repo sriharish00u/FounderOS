@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/useApp';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  onToggleMobileMenu?: () => void;
+}
+
+export const Header: React.FC<HeaderProps> = ({ onToggleMobileMenu }) => {
   const { 
     activities, 
     notifications, 
@@ -21,11 +25,23 @@ export const Header: React.FC = () => {
 
   return (
     <header className="bg-[var(--paper)] text-[var(--ink)] sticky top-0 z-20 select-none">
-      <div className="flex justify-between items-center px-7 py-3 border-b border-[var(--ink)] font-mono-custom text-[11px] text-[var(--muted)] tracking-[0.14em]">
+      <div className="flex justify-between items-center px-4 md:px-7 py-3 border-b border-[var(--ink)] font-mono-custom text-[11px] text-[var(--muted)] tracking-[0.14em]">
         <div className="flex items-center gap-3">
+          <button
+            onClick={onToggleMobileMenu}
+            className="md:hidden p-1 -ml-1 text-[var(--ink)] hover:bg-[var(--panel)] border border-[var(--rule)] rounded-sm"
+            type="button"
+            aria-label="Toggle Navigation Menu"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
           <span className="text-[var(--ink)] font-semibold">Founder Os</span>
           <span className="opacity-40">·</span>
-          <span>{company.name}</span>
+          <span className="truncate max-w-[120px] sm:max-w-none">{company.name}</span>
         </div>
         <div className="text-[var(--muted)]">
           <span className="text-[var(--ink)] font-medium">{company.code}</span>
